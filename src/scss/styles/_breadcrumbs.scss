@@ -1,0 +1,11 @@
+.breadcrumb {
+	svg {
+		width: $spacer*1.2;
+		height: $spacer*1.2;
+		fill: $utsmokey;
+	}
+	a {
+		color: $utsmokey;
+		text-decoration: none;
+	}
+}

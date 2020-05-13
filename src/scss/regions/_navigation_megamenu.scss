@@ -1,0 +1,10 @@
+.navbar {
+ .has-megamenu {
+	position: static;
+  }
+  .megamenu {
+  	@extend .container;
+  }
+}
+
+
