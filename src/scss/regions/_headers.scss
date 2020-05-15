@@ -1,1 +1,16 @@
-
+.home_link {
+	display: flex;
+}
+// Centered Logo on small screens
+#utk_logo_header_centered {
+	@extend .d-md-none;
+	@extend .mx-auto;
+	@extend .mt-3;
+	@extend .col-8;
+}
+// Left Aligned Logo
+#utk_logo_header {
+	@extend .mt-3;
+	@extend .d-none;
+	@extend .d-md-block;
+}

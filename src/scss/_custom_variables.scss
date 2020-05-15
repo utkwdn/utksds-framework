@@ -6,33 +6,7 @@
 
 
 
-// UT COLOR SYSTEM
-$white: #fff;
-$utorange: #FF8200;
-$utlimestone: rgb(240, 237, 227);
-$utsmokey: rgb(88, 89, 91);
-$uttorch: rgb(230, 89, 51);
-$uttorchweb: #d5431a;
-$utriver: rgb(81, 124, 150);
-$utrock: rgb(167, 169, 172);
-$uteureka: rgb(235, 234, 100);
-$utswitchgrass: rgb(171, 193, 120);
-$utvalley: rgb(0, 116, 111);
-$utleconte: rgb(141, 32, 72);
-$utsummitt: rgb(182, 225, 226);
-$utglobe: rgb(0, 108, 147);
-$utsunsphere: rgb(255, 213, 48);
-$utregalia:  rgb(117, 74, 126);
-$utlegacy:  rgb(87, 149, 132);
-$utbuckskin:  rgb(112, 85, 80);
-$utfountain:  rgb(33, 151, 169);
-$utenergy:  rgb(238, 62, 128);
-$utsmokeytext: #333;
-$uttextsmokey: $utsmokeytext;
 
-//UT Branding Colors Modify
-$utlimestone-d: rgb(213, 211, 205);
-$linkdrawer: $utlimestone;
 
 // UT Grays
  $utgray1: #F6F6F6;
@@ -72,7 +46,38 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    $utfountain !default;
+
+
+
+// UT COLOR SYSTEM
+$white: #fff;
+$utorange: #FF8200;
+$utlimestone: rgb(240, 237, 227);
+$utsmokey: rgb(88, 89, 91);
+$uttorch: rgb(230, 89, 51);
+$uttorchweb: #d5431a;
+$utriver: rgb(81, 124, 150);
+$utrock: $gray-500;
+$uteureka: rgb(235, 234, 100);
+$utswitchgrass: rgb(171, 193, 120);
+$utvalley: rgb(0, 116, 111);
+$utleconte: rgb(141, 32, 72);
+$utsummitt: rgb(182, 225, 226);
+$utglobe: rgb(0, 108, 147);
+$utsunsphere: rgb(255, 213, 48);
+$utregalia:  rgb(117, 74, 126);
+$utlegacy:  rgb(87, 149, 132);
+$utbuckskin:  rgb(112, 85, 80);
+$utfountain:  rgb(33, 151, 169);
+$utenergy:  rgb(238, 62, 128);
+$utsmokeytext: #333;
+$uttextsmokey: $utsmokeytext;
+
+//UT Branding Colors Modify
+$utlimestone-d: rgb(213, 211, 205);
+$linkdrawer: $utlimestone;
+
+$blue:    $utriver !default;
 $indigo:  $utglobe !default;
 $purple:  $utregalia !default;
 $pink:    $utenergy !default;
@@ -81,7 +86,7 @@ $orange:  $utorange !default;
 $yellow:  $utsunsphere !default;
 $green:   $utlegacy !default;
 $teal:    $utswitchgrass !default;
-$cyan:    $utsummitt !default;
+$cyan:    $utfountain !default;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -105,7 +110,7 @@ $colors: map-merge(
 );
 
 $primary:       $utsmokey !default;
-$secondary:     $utrock  !default;
+$secondary:     $utglobe  !default;
 $success:       $utswitchgrass !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -117,6 +122,9 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
+    "orange":     $utorange,
+    "smokey":     $utsmokey,
+    "globe":      $utglobe,
     "primary":    $primary,
     "secondary":  $secondary,
     "success":    $success,
@@ -136,7 +144,7 @@ $theme-color-interval:      8% !default;
 $yiq-contrasted-threshold:  150 !default;
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark:             $utsmokeytext !default;
+$yiq-text-dark:             $utsmokey !default;
 $yiq-text-light:            $white !default;
 
 // Characters which are escaped by the escape-svg function
@@ -328,10 +336,10 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
 
 $font-weight-lighter:         lighter !default;
-$font-weight-light:           300 !default;
+$font-weight-light:           200 !default;
 $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
+$font-weight-bolder:          800 !default;
 
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
@@ -345,9 +353,9 @@ $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
-$headings-font-weight:        800 !default;
+$headings-font-weight:        700 !default;
 $headings-line-height:        1.2 !default;
-$headings-color:              null !default;
+$headings-color:              $utsmokey !default;
 
 $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
@@ -1101,7 +1109,7 @@ $breadcrumb-item-padding:           .5rem !default;
 
 $breadcrumb-margin-bottom:          1rem !default;
 
-$breadcrumb-bg:                     $white !default;
+$breadcrumb-bg:                     transparent !default;
 $breadcrumb-divider-color:          $utorange !default;
 $breadcrumb-active-color:           $gray-600 !default;
 $breadcrumb-divider:                quote("→") !default; /* quote("/") */
