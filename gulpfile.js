@@ -21,17 +21,25 @@ var output        = './build/assets/css';
 
 
 
-// Compile Stylesheets
+// // Compile Stylesheets
+// gulp.task('sass', function () {
+//   return gulp
+//     // Find all `.scss` files from the `stylesheets/` folder
+//     .src(input)
+//     // Run Sass on those files
+//     .pipe(sass({outputStyle: 'compressed'}))
+//     .pipe(sass(sassOptions).on('error', sass.logError))
+//     // Write the resulting CSS in the output folder
+//     .pipe(gulp.dest(output));
+// });
 gulp.task('sass', function () {
-  return gulp
-    // Find all `.scss` files from the `stylesheets/` folder
-    .src(input)
-    // Run Sass on those files
-    .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(sass(sassOptions).on('error', sass.logError))
-    // Write the resulting CSS in the output folder
-    .pipe(gulp.dest(output));
+ return gulp.src(input)
+   .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
+   .pipe(gulp.dest(output));
 });
+
+
+
 
    // Compile Scripts
    gulp.task('scripts', function () {

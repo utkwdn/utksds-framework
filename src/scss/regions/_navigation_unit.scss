@@ -1,3 +1,23 @@
+#navbar-navigation_unit {
+  button.navbar-toggler, button.search-toggler  {
+  	&[aria-expanded="false"] {
+      .open_menu {
+        display: inline-block;
+      }
+      .close_menu {
+        display: none;
+      }
+  	}
+  	&[aria-expanded="true"] {
+     .open_menu {
+        display: none;
+      }
+      .close_menu {
+        display: inline-block;
+      }
+  	}
+  }
+}
 #navigation_unit {
 //	border-bottom: $spacer/2 solid $utorange;
 
@@ -6,8 +26,11 @@
 	font-weight: $headings-font-weight;
 	color: $utsmokey;
   }
-  a {
+  a.nav-link {
   	text-decoration: none;
+  	.active {
+  		font-weight: bolder;
+  	}
   }
 }
 #ut_identifier {

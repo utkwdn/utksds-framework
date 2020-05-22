@@ -539,7 +539,7 @@ $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
 $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
-$input-placeholder-color:               $gray-600 !default;
+$input-placeholder-color:               $gray-300 !default;
 $input-plaintext-color:                 $body-color !default;
 
 $input-height-border:                   $input-border-width * 2 !default;
@@ -792,7 +792,7 @@ $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
 $navbar-light-color:                rgba($black, .5) !default;
 $navbar-light-hover-color:          rgba($black, .7) !default;
-$navbar-light-active-color:         rgba($black, .9) !default;
+$navbar-light-active-color:         $utsmokey !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-light-toggler-border-color: rgba($black, .1) !default;
@@ -1112,7 +1112,8 @@ $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     transparent !default;
 $breadcrumb-divider-color:          $utorange !default;
 $breadcrumb-active-color:           $gray-600 !default;
-$breadcrumb-divider:                quote("→") !default; /* quote("/") */
+//$breadcrumb-divider:                url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik00IC43NTVsMTQuMzc0IDExLjI0NS0xNC4zNzQgMTEuMjE5LjYxOS43ODEgMTUuMzgxLTEyLTE1LjM5MS0xMi0uNjA5Ljc1NXoiLz48L3N2Zz4=) !default; /* quote("/") */
+$breadcrumb-divider:                quote("/") !default;
 
 $breadcrumb-border-radius:          $border-radius !default;
 

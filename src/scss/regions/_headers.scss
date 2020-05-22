@@ -1,16 +1,20 @@
+.site-title {
+	font-size: $font-size-lg;
+}
 .home_link {
 	display: flex;
 }
 // Centered Logo on small screens
-#utk_logo_header_centered {
+.utk_logo_powert {
 	@extend .d-md-none;
-	@extend .mx-auto;
 	@extend .mt-3;
-	@extend .col-8;
+	// @extend .col-8;
+	height: $spacer*2.25;
+	width: $spacer*2.25;
 }
 // Left Aligned Logo
 #utk_logo_header {
-	@extend .mt-3;
+	//@extend .mt-3;
 	@extend .d-none;
 	@extend .d-md-block;
 }

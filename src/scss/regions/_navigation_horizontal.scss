@@ -1,0 +1,11 @@
+.navbar-nav {
+	.nav-link {
+		&.active {
+			font-weight: $font-weight-bolder;
+			color: $utsmokey;
+		}
+	}
+}
+.navbar button svg {
+	fill: $utrock;
+}
