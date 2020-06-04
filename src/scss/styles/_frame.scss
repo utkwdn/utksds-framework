@@ -8,18 +8,18 @@
 			height: 4*$spacer;
 			top: -2*$spacer;
 			left: -2*$spacer;
-			border-top:  0.25*$spacer solid $utorange;
-			border-left: 0.25*$spacer solid $utorange;
+			border-top:  0.4*$spacer solid $utorange;
+			border-left: 0.4*$spacer solid $utorange;
 		}
-		&::after {
-			position: absolute;
-			content: "";
-			width: 4*$spacer;
-			height: 4*$spacer;
-			bottom: -2*$spacer;
-			right: -2*$spacer;
-			border-right:  0.25*$spacer solid $utorange;
-			border-bottom: 0.25*$spacer solid $utorange;
-		}
+//		&::after {
+//			position: absolute;
+//			content: "";
+//			width: 4*$spacer;
+//			height: 4*$spacer;
+//			bottom: -2*$spacer;
+//			right: -2*$spacer;
+//			border-right:  0.25*$spacer solid $utorange;
+//			border-bottom: 0.25*$spacer solid $utorange;
+//		}
 	}	
 }

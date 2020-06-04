@@ -215,7 +215,7 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $utsmokey !default;
+$body-color:                $utsmokeytext !default;
 
 
 // Links
@@ -296,8 +296,8 @@ $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 
-$component-active-color:      $white !default;
-$component-active-bg:         theme-color("primary") !default;
+$component-active-color:      $utsmokeytext !default;
+$component-active-bg:         $utgray2 !default; /* theme-color("primary") */
 
 $caret-width:                 .3em !default;
 $caret-vertical-align:        $caret-width * .85 !default;
