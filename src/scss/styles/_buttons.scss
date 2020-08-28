@@ -1,3 +1,6 @@
+.wp-block-button__link {
+  @extend .btn;
+}
 .btn {
 	text-decoration: none;
 }

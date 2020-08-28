@@ -1,0 +1,42 @@
+
+
+
+.has-light-background-color {
+  @extend .bg-light;
+}
+
+
+.has-dark-background-color {
+  @extend .bg-dark;
+}
+
+
+.has-orange-background-color {
+  @extend .bg-orange;
+}
+
+
+.has-globe-background-color {
+  @extend .bg-globe;
+}
+
+
+.has-success-background-color {
+  @extend .bg-success;
+}
+
+
+.has-primary-background-color {
+  @extend .bg-primary;
+}
+
+
+.has-info-background-color {
+  @extend .bg-info;
+}
+.has-warning-background-color {
+  @extend .bg-warning;
+}
+.has-danger-background-color {
+  @extend .bg-danger;
+}
