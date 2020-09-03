@@ -9,3 +9,17 @@
 .navbar button svg {
 	fill: $utrock;
 }
+
+// Wordpress compatibility
+
+
+#site-horizontal-navigation .menu-item {
+  @extend .nav-item;
+}
+#site-horizontal-navigation .menu-item a {
+  @extend .nav-link;
+  @extend .text-reset;
+}
+#site-horizontal-navigation .menu-item.current-menu-item, #site-horizontal-navigation .menu-item.current-menu-ancestor {
+  font-weight: bold;
+}

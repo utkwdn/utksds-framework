@@ -3,15 +3,7 @@ footer#colophon {
 	padding-top: $spacer;
 }
 
-
-.search-utk .btn {
-	border-color: $input-border-color;
-	border-width: $input-btn-border-width $input-btn-border-width $input-btn-border-width 0;
-	border-style: solid;
-}
-#system_signoff {
-	width: $spacer*1.5;
-	height: $spacer*1.5;
-	@extend .mx-auto;
-	fill: $utrock;
+#utk_footer_logo {
+  max-width: 300px;
+  margin-bottom: $spacer*2;
 }

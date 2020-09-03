@@ -18,3 +18,11 @@
 		margin-top: -0.25rem;
 	}
 }
+
+#bellows {
+  .current-menu-item, .current_page_item{
+    > a {
+      font-weight: bold;
+    }
+  }  
+}
