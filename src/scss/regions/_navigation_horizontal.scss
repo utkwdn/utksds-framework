@@ -23,3 +23,34 @@
 #site-horizontal-navigation .menu-item.current-menu-item, #site-horizontal-navigation .menu-item.current-menu-ancestor {
   font-weight: bold;
 }
+
+
+
+.navbar-horizontal #bellows {
+  margin-top: 4rem;
+  @include media-breakpoint-up(xl) {
+    margin-top: 0;
+  }
+  a, button {
+   // float: left;
+    &:hover {
+      background: $utgray1;
+    }
+  }
+  a {
+    @extend .text-reset;
+    @extend .text-decoration-none;    
+    //padding-right:  25%;   
+    @extend .nav-link;
+    cursor: pointer;
+  }
+  li {
+     @extend .nav-item;
+     a {
+       @extend .nav-link;
+     }
+  }
+  .sub-menu {
+    display: none;
+  }
+}

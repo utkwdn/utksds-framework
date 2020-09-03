@@ -1,5 +1,5 @@
 
-#bellows {
+.navbar-leftrail #bellows {
   // @include make-container();
   margin-top: 4rem;
   @include media-breakpoint-up(xl) {
@@ -36,10 +36,6 @@
 //    margin-top: 15px;
 //    border-left: 1px solid $utgray3;
 
-    background-color: transparent;
-    background-image: url(../img/expand_sprite.svg);
-    background-repeat: no-repeat;
-    background-position: 65% 0;
     position: absolute;
     right: 0;
     top: 0;
