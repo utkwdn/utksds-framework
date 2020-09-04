@@ -13,7 +13,7 @@
     transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out, visibility .3s ease-in-out;
     transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
-    z-index: 1;
+    z-index: 10;
     &.open {
       visibility: visible;
       -webkit-transform: translateX(-100%);
