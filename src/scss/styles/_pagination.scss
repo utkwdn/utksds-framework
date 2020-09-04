@@ -1,3 +1,6 @@
+.screen-reader-text {
+  @extend .sr-only;
+}
 .nav-links {
   @extend .pagination;
 }

@@ -1,14 +1,14 @@
-.navbar-nav {
-	.nav-link {
-		&.active {
-			font-weight: $font-weight-bolder;
-			color: $utsmokey;
-		}
-	}
-}
-.navbar button svg {
-	fill: $utrock;
-}
+// .navbar-nav {
+// 	.nav-link {
+// 		&.active {
+// 			font-weight: $font-weight-bolder;
+// 			color: $utsmokey;
+// 		}
+// 	}
+// }
+ .navbar button svg {
+ 	fill: $utgray1;
+ }
 
 // Wordpress compatibility
 
@@ -67,6 +67,7 @@
       z-index: 1;
       a:hover {
         background: $utrock;
+        color: $white;
       }
     }
     .menu-item-has-children:hover .sub-menu, .dropdown:hover .sub-menu {

@@ -1,0 +1,9 @@
+.widget-title {
+  @extend .card-title;
+}
+.widget {
+  @extend .mb-3;
+  ul {
+    @extend .list-unstyled;
+  } 
+}
