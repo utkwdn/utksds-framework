@@ -1,5 +1,5 @@
 
-.navbar-leftrail #bellows {
+#bellows {
   // @include make-container();
   margin-top: 4rem;
   @include media-breakpoint-up(xl) {
@@ -20,22 +20,7 @@
     padding: 15px 25% 15px 0;   
   }
   button {
-    // @include make-col(3);
-//    border-radius: 50%;
-//    background: $gray-200;
-//    position: absolute;
     right: 30px;
-//    height: 2.5rem;
-//    width: 2.5rem;
-////    margin-top: 0.25rem;
-////    padding: 0;
-//
-//    position: absolute;
-//    right: 30px;
-////    top: 0;
-//    margin-top: 15px;
-//    border-left: 1px solid $utgray3;
-
     position: absolute;
     right: 0;
     top: 0;

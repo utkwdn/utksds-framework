@@ -24,22 +24,22 @@ $('#site-navigation').on('focusout', function (e) {
 // Bellows MenuCollapsing
 // =========================================================
 // Add the button
-$('.navbar-leftrail #bellows .sub-menu').before('<button class="btn btn-bellows"><div class="btn-bellows-openedcontent"><svg class="btn-icon-plus" version="1.1"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"><path d="M24,10.4H13.6V0h-3.1v10.4H0v3.1h10.4V24h3.1V13.6H24V10.4z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  class="btn-icon-minus" viewBox="0 0 24 24"><path d="M0 10h24v4h-24z"/></svg><span class="sr-only">Toggle Sub Menu</span></div></button>');
+$('#bellows .sub-menu').before('<button class="btn btn-bellows"><div class="btn-bellows-openedcontent"><svg class="btn-icon-plus" version="1.1"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"><path d="M24,10.4H13.6V0h-3.1v10.4H0v3.1h10.4V24h3.1V13.6H24V10.4z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  class="btn-icon-minus" viewBox="0 0 24 24"><path d="M0 10h24v4h-24z"/></svg><span class="sr-only">Toggle Sub Menu</span></div></button>');
 
 
 
 
 
 $('.sub-menu').addClass("collapse");
-$('.navbar-leftrail #bellows .current-menu-item > .sub-menu').removeClass("collapse");
+$('#bellows .current-menu-item > .sub-menu').removeClass("collapse");
 $('.navbar-leftrail #bellows .current-page-ancestor > .sub-menu').removeClass("collapse");
 $('.navbar-leftrail #bellows .current-menu-ancestor > .sub-menu').removeClass("collapse");
-$('.navbar-leftrail #bellows .current-page-ancestor > .btn-bellows').addClass("btn-bellows-open");
-$('.navbar-leftrail #bellows .current-menu-ancestor > .btn-bellows').addClass("btn-bellows-open");
+$('#bellows .current-page-ancestor > .btn-bellows').addClass("btn-bellows-open");
+$('#bellows .current-menu-ancestor > .btn-bellows').addClass("btn-bellows-open");
 $('button.btn-bellows').attr("aria-expanded","false");
 $('button.btn-bellows.btn-bellows-open').attr("aria-expanded","true");
-$('.navbar-leftrail #bellows .current-menu-item > .btn-bellows').toggleClass("btn-bellows-open");
-$('.navbar-leftrail #bellows .current-menu-item button.btn-bellows').attr("aria-expanded","true");
+$('#bellows .current-menu-item > .btn-bellows').toggleClass("btn-bellows-open");
+$('#bellows .current-menu-item button.btn-bellows').attr("aria-expanded","true");
 
 
 // Make the button work

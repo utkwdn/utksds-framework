@@ -18,39 +18,60 @@
 }
 #site-horizontal-navigation .menu-item a {
   @extend .nav-link;
-  @extend .text-reset;
+  
 }
 #site-horizontal-navigation .menu-item.current-menu-item, #site-horizontal-navigation .menu-item.current-menu-ancestor {
   font-weight: bold;
 }
 
+// We lean on the stying from left rail bellows to style the small screen, off-canvas view.
+// Here we strip that stying and style it as a horizontal dropdown for the XL breakpoint.
 
 
-.navbar-horizontal #bellows {
-  margin-top: 4rem;
-  @include media-breakpoint-up(xl) {
-    margin-top: 0;
-  }
-  a, button {
-   // float: left;
-    &:hover {
-      background: $utgray1;
+@include media-breakpoint-up(xl) {
+  .navbar-horizontal #bellows {
+    .btn-bellows {
+      display: none;
+    }
+    a, button {
+      color: white;
+      &:hover {
+        background: $utgray1;
+      }
+    }
+    a {
+      padding: $spacer/2 $spacer;
+      cursor: pointer;
+    }
+    ul#primary-menu {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      flex-direction: row;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      background: $utgray2;
+    }
+    li {
+      border: none;
+    }
+    .sub-menu {
+      display: none;
+      position: absolute;
+      background: white;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      a:hover {
+        background: $utrock;
+      }
+    }
+    .menu-item-has-children:hover .sub-menu, .dropdown:hover .sub-menu {
+      display: block;
     }
   }
-  a {
-    @extend .text-reset;
-    @extend .text-decoration-none;    
-    //padding-right:  25%;   
-    @extend .nav-link;
-    cursor: pointer;
-  }
-  li {
-     @extend .nav-item;
-     a {
-       @extend .nav-link;
-     }
-  }
-  .sub-menu {
-    display: none;
-  }
 }
+
