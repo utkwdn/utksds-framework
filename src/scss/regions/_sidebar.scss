@@ -5,5 +5,13 @@
   @extend .mb-3;
   ul {
     @extend .list-unstyled;
-  } 
+  }
+  input {
+    @extend .form-control;
+  }
+  label {
+    @extend .col-12;
+    @extend .px-0;
+  }
 }
+
