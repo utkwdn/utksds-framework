@@ -46,14 +46,8 @@
 @import "./node_modules/bootstrap/scss/print";
 
 
-// Custom Texture
-
-@import "./src/scss/texture/chrome";
-@import "./src/scss/texture/logos";
-
-
-
 // UT Layouts
+// Layouts are essentially handled by bootstrap's built-in grid system.
 
 
 // UT Regions
@@ -78,6 +72,7 @@
 @import "./src/scss/components/profiles";
 @import "./src/scss/components/promos";
 @import "./src/scss/components/forms";
+@import "./src/scss/components/jumbotron";
 //@import "./src/scss/components/sliders";
 
 
@@ -95,12 +90,6 @@
 @import "./src/scss/styles/background";
 @import "./src/scss/styles/textcolors";
 @import "./src/scss/styles/pagination";
+@import "./src/scss/styles/logos";
 
-
-// Main Site
-
-@import "./src/scss/main-specific/regions";
-
-
-// @import "./src/scss/covid-specific/home";
 
