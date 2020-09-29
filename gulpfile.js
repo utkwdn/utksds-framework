@@ -70,4 +70,3 @@ gulp.task('watch', function() {
 
 gulp.task('default', gulp.series('sass','scripts','watch'));
 
-
