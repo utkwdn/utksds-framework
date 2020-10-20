@@ -1,7 +1,5 @@
-*~
-.DS_Store
-.svn
-.cvs
-*.bak
-*.swp
-Thumbs.db
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
