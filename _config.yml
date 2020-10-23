@@ -24,6 +24,8 @@ description:
   Documentation for using the official Design System here at UT.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: utknoxville
+repo: https://github.utk.edu/ocm/design-system-build-files/
+
 # github_username:  ocm
 
 # Build settings
