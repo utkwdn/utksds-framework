@@ -18,14 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: UT Design System Documentation
-email: webteam@utk.edu
-description: >- # this means to ignore newlines until "baseurl:"
+title: UT Shared Design System Documentation
+email: webteam@utk.com
+description: 
   Documentation for using the official Design System here at UT.
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: utknoxville
-# github_username:  jekyll
+# github_username:  ocm
 
 # Build settings
 theme: minima
@@ -51,3 +50,41 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+baseurl: "/ocm/design-system-build-files" # the subpath of your site, e.g. /blog
+url: "https://pages.github.utk.edu" # the base hostname & protocol for your site, e.g. http://example.com
+root: /
+permalink: /:year/:month/:day/:title/
+
+
+plugins_dir: plugins
+code_dir: downloads/code
+category_dir: blog/categories
+rdiscount:
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+future: true
+
+
+titlecase: true       # Converts page and post titles to titlecase
+
+
+# Build settings
+markdown: kramdown
+kramdown:
+  auto_ids:       true
+  entity_output:  numeric
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  footnote_nr:    1
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+sass:
+    sass_dir: _sass
+    style: compressed
