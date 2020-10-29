@@ -1,6 +1,18 @@
 # design-system-build-files
-The Official UT Digital Design System
 
-A bootstrap theme.
+The Official UT Digital Design System was made to help UT web developers build interfaces that match UT's visual identity and make consistent the user interface of a variety of digital products.
 
-Documentation on use at [getbootsrap.com](https://getbootstrap.com).
+Requirements:
+
+- NPM
+- Gulp 4.0.2
+
+1. run `npm install` to install dependencies
+
+## Using Gulp Scripts
+
+`gulp` watches the `/src/` directory for changes and creates files in `/build/`
+
+***
+
+Documentation on style use at [getbootsrap.com](https://getbootstrap.com).
