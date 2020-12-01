@@ -1,3 +1,6 @@
+#masthead {
+  border-top: 0.25rem solid $utorange;
+  }
 .site-title {
 	font-size: $font-size-lg;
 }
@@ -13,9 +16,9 @@
 	width: $spacer*2.25;
 }
 // Left Aligned Logo
-#masthead {
-  border-bottom: $spacer/2 solid $utorange;
-	}
+// #masthead {
+//   border-bottom: $spacer/2 solid $utorange;
+// 	}
 .utk-header-logo {
   max-width: 325px;
 }

@@ -63,12 +63,14 @@
 @import "./src/scss/regions/navigation_universal";
 @import "./src/scss/regions/search_area";
 @import "./src/scss/regions/sidebar";
+@import "./src/scss/regions/universal-header";
 
 
 // UT Components
 
 @import "./src/scss/components/accordion_folds";
 @import "./src/scss/components/calendars";
+@import "./src/scss/components/gallery";
 @import "./src/scss/components/profiles";
 @import "./src/scss/components/promos";
 @import "./src/scss/components/forms";
@@ -91,5 +93,4 @@
 @import "./src/scss/styles/textcolors";
 @import "./src/scss/styles/pagination";
 @import "./src/scss/styles/logos";
-
-
+@import "./src/scss/styles/wp";
