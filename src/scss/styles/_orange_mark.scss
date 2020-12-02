@@ -13,6 +13,10 @@
     top: 0;
     bottom: auto
   }
+  &.widget-title {
+  padding-top: $spacer;
+  margin-top: $spacer;
+  }
 }
 
 

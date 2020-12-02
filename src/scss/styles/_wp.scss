@@ -8,3 +8,8 @@
 	margin-right: $spacer;
 	margin-bottom: $spacer;
 }
+.aligncenter {
+  display: block;
+  float: none;
+  @extend .mx-auto;
+}

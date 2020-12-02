@@ -1,10 +1,7 @@
-#footer-main-extended {
-	background-color: $utsmokey;
-
-	background-image: url(https://www.utk.edu/images/interface/smokies.jpg);
+#extended-footer {
+	background-image: url('../i/mountains.svg');
 	background-size: cover;
 	margin-top: $spacer;
-	margin-bottom: $spacer;
 	padding-bottom: $spacer;
 	padding-top: $spacer;
 	a, h4 {
