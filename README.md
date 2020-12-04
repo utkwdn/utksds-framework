@@ -1,6 +1,6 @@
-# design-system-build-files
+# University of Tennessee, Knoxville Design System Framework
 
-The Official UT Digital Design System was made to help UT web developers build interfaces that match UT's visual identity and make consistent the user interface of a variety of digital products.
+The Official UT Digital Design System Framework was made to help UT web developers build interfaces that match UT's visual identity and make consistent the user interface of a variety of digital products.
 
 Requirements:
 
