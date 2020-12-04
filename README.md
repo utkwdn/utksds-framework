@@ -7,7 +7,7 @@ Requirements:
 - NPM
 - Gulp 4.0.2
 
-1. run `npm install` to install dependencies
+1. run `npm install gulp` to install dependencies
 
 ## Using Gulp Scripts
 
