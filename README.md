@@ -1,3 +1,5 @@
+![Power T](https://images.utk.edu/designsystem/2020/assets/i/icon-114x114.png)
+
 # University of Tennessee, Knoxville Design System Framework
 
 The Official UT Digital Design System Framework was made to help UT web developers build interfaces that match UT's visual identity and make consistent the user interface of a variety of digital products.
