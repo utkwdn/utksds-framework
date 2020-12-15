@@ -62,17 +62,17 @@
 
   .btn-bellows {
     .btn-icon-plus {
-      display: inline-block;
-    }
-    .btn-icon-minus {
       display: none;
     }
-    &.btn-bellows-open {
+    .btn-icon-minus {
+      display: inline-block;
+    }
+    &.collapsed {
       .btn-icon-plus {
-        display: none;
+        display: inline-block;
       }
       .btn-icon-minus {
-        display: inline-block;
+        display: none;
       }
     }
   }
