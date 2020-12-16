@@ -16,6 +16,7 @@
   "author": "OCM",
   "license": "ISC",
   "dependencies": {
+    "ally.js": "^1.4.1",
     "bootstrap": "^4.5.3",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
