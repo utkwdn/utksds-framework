@@ -37,13 +37,7 @@
 $('#searchHeader').on('shown.bs.collapse', function () {
   var utksearch = document.querySelector('#q');
   utksearch.focus();
-})
-
-$('.btn-bellows').on('shown.bs.collapse', function () {
-  var utksearch = document.querySelector('#q');
-  utksearch.focus();
-  alert("hey");
-})
+});
 
 
 
