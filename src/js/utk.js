@@ -118,7 +118,7 @@ function openDialog() {
   });
 
   // Show the dialog
-  dialog.hidden = false;
+  // dialog.hidden = false;
 }
 
 function closeDialogByKey() {
@@ -145,7 +145,7 @@ function closeDialog() {
   // return focus to where it was before we opened the dialog
   focusedElementBeforeDialogOpened.focus();
   // hide or remove the dialog
-  dialog.hidden = true;
+  //dialog.hidden = true;
 }
 
 function saveDialog(event) {
