@@ -19,3 +19,13 @@
       background-size: $spacer*1.5 $spacer*1.5;
 	}
 }
+
+#searchThissite, #searchThissiteBtn {
+  border-color: $utgray2;
+}
+#searchThissiteBtn {
+  background: $utgray2;
+  &:hover {
+    background: $utgray1;
+  }
+}

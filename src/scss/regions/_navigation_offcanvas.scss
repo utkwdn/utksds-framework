@@ -29,9 +29,10 @@
   }
 }
 #mobile-menu-close {
-  float: right;
+  // float: right;
   @extend .btn;
   @extend .btn-smokey;
+  //display: block;
   margin-top: $spacer;
   svg {
     fill: $utgray3;

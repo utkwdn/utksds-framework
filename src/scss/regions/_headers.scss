@@ -24,7 +24,13 @@
 }
 
 #power-t {
-  max-width: 4.75rem; 
+  width: 2.5rem;
+  @include media-breakpoint-up(md) {
+    width: 3.25rem;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 4.75rem;
+  }
   float: left;
   margin-right:  1rem;
   padding: 0; // compatibility with BS5

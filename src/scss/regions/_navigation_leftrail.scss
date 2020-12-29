@@ -1,7 +1,7 @@
 
 #bellows {
   // @include make-container();
-  margin-top: 4rem;
+  margin-top: 2rem;
   @include media-breakpoint-up(xl) {
     margin-top: 0;
   }
@@ -11,7 +11,7 @@
       background: $utgray1;
     }
     &:focus {
-      border: $spacer/6 solid $uttextsmokey;
+      border: $spacer/6 solid $utorange;
       margin: -$spacer/6;
     }
   }
