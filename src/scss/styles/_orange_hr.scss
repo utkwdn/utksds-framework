@@ -1,4 +1,9 @@
-hr.orange-hash {
+hr.orange-hash, hr.orange-separator {
   border: 0;
   border-top: 0.75*$spacer solid $utorange;
+}
+hr.orange-separator {
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
