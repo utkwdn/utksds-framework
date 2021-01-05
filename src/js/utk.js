@@ -173,21 +173,18 @@ dialog.addEventListener('submit', saveDialog, true);
 // ========================================================================================================================
 
 
+// This opens the current page menu. (Left rail version)
 
 
+var divs = document.querySelectorAll('.current-menu-ancestor > ul.collapse');
+for (var i = 0; i < divs.length; i++) {
+    divs[i].classList.add('show');
+};
+var divs = document.querySelectorAll('.current-menu-ancestor > button.btn-bellows');
+for (var i = 0; i < divs.length; i++) {
+    divs[i].classList.remove('collapsed');
+};
 
-// If you keyboard out (lose focus) of the opened off-canvas menu, make the menu automatically close
-//var modaldiv = document.querySelector('#site-navigation')
-// $('#site-navigation').on('focusout', function (e) {
-//     setTimeout(function () { // needed because nothing has focus during 'focusout'
-//         if ($(':focus').closest('#site-navigation').length <= 0) {
-//           if ($("#site-navigation").hasClass("open")) {
-//              $("#site-navigation").toggleClass("open");
-//             };
-//         }
-//     }, 0);
-// });
-// 
 
 // Use the escape key to close main menu ('mobile view')
 var sitemenu = document.querySelector('#site-navigation')

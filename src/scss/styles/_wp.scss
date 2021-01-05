@@ -1,3 +1,6 @@
+// This file is for wordpress's odd css naming compatiblitiy.
+// Note: Do this sparingly, and ONLY if necessary. Our goal should be to make the theme output HTML that is compatible with the framework.
+
 .alignright {
 	float: right;
 	margin-left: $spacer;
@@ -12,4 +15,10 @@
   display: block;
   float: none;
   @extend .mx-auto;
+}
+.has-text-align-center {
+  @extend .text-center;
+}
+.has-text-align-right {
+  @extend .text-right;
 }

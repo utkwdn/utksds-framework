@@ -70,7 +70,7 @@ $utlegacy:  rgb(87, 149, 132);
 $utbuckskin:  rgb(112, 85, 80);
 $utfountain:  rgb(33, 151, 169);
 $utenergy:  rgb(238, 62, 128);
-$utsmokeytext: #333;
+$utsmokeytext: #4b4b4b;
 $uttextsmokey: $utsmokeytext;
 
 //UT Branding Colors Modify
@@ -261,7 +261,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 1060px,
-  xl: 1340px
+  xl: 1540px
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -355,7 +355,7 @@ $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
 $headings-font-weight:        800 !default;
 $headings-line-height:        1.2 !default;
-$headings-color:              $utsmokey !default;
+$headings-color:              null !default;
 
 $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
