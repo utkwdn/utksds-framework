@@ -1,14 +1,10 @@
 #extended-footer {
-	background-image: url('../i/mountains.svg');
-	background-size: cover;
+//	background-image: url('../i/mountains.svg');
+//	background-size: cover;
 	margin-top: $spacer;
-	padding-bottom: $spacer;
-	padding-top: $spacer;
+	padding-top: 4*$spacer;
+	padding-bottom: 4*$spacer;
 //	a, h4 {
 //		color: $white;
 //	}
-}
-.extended-footer {
-	padding-top: 4*$spacer;
-	padding-bottom: 4*$spacer;
 }
