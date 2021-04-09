@@ -1,6 +1,6 @@
-#masthead {
-  border-top: 0.25rem solid $utorange;
-  }
+//#masthead {
+//  border-top: 0.25rem solid $utorange;
+//  }
 .site-title {
 	font-size: $font-size-lg;
 }
@@ -29,7 +29,7 @@
     width: 3.25rem;
   }
   @include media-breakpoint-up(xl) {
-    width: 4.75rem;
+    width: 3.75rem;
   }
   float: left;
   margin-right:  1rem;

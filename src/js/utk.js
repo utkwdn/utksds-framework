@@ -34,7 +34,7 @@
 // ===[ Control the focus .  ]=======================================================================================
 // ========================================================================================================================
 
-$('#searchHeader').on('shown.bs.collapse', function () {
+$('#searchModal').on('shown.bs.modal', function () {
   var utksearch = document.querySelector('#q');
   utksearch.focus();
 });

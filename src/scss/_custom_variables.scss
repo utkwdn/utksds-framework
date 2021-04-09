@@ -72,6 +72,9 @@ $utfountain:  rgb(33, 151, 169);
 $utenergy:  rgb(238, 62, 128);
 $utsmokeytext: #4b4b4b;
 $uttextsmokey: $utsmokeytext;
+$utcoolsmokey: #313E48;
+$utcoolrock: #D9DFE3;
+$utlinkriver: #1C7CD5;
 
 //UT Branding Colors Modify
 $utlimestone-d: rgb(213, 211, 205);
@@ -222,7 +225,7 @@ $body-color:                $utsmokeytext !default;
 //
 // Style anchor elements.
 
-$link-color:                              $utglobe !default;
+$link-color:                              $utlinkriver !default;
 $link-decoration:                         underline !default;
 $link-hover-color:                        darken($link-color, 15%) !default;
 $link-hover-decoration:                   underline !default;

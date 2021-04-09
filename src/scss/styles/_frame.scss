@@ -1,15 +1,17 @@
 @include media-breakpoint-up(lg) {
 	.framed {
 		position: relative;
-		&::before {
-			position: absolute;
-			content: "";
-			width: 4*$spacer;
-			height: 4*$spacer;
-			top: -2*$spacer;
-			left: -2*$spacer;
-			border-top:  0.4*$spacer solid $utorange;
-			border-left: 0.4*$spacer solid $utorange;
+		display: inline-block;
+		&::after {
+      position: absolute;
+      content: "";
+      width: 45%;
+      height: calc(100% + 1rem);
+      top: -0.6rem;
+      left: -0.6rem;
+      border-top: 0.6rem solid #FF8200;
+      border-left: 0.6rem solid #FF8200;
+      border-bottom: 0.6rem solid #FF8200;
 		}
 //		&::after {
 //			position: absolute;
