@@ -120,7 +120,7 @@
   > li {
     border-bottom: 1px solid $utgray1;
     padding-bottom: $spacer;
-    font-size: $font-size-lg;
+    font-size: $font-size-sm;
     &.current-menu-item > a, &.current-menu-ancestor > a {
       font-weight: bold;
     }
