@@ -190,7 +190,7 @@ for (var i = 0; i < divs.length; i++) {
 var sitemenu = document.querySelector('#site-navigation')
 window.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') {
-    sitemenu.classList.toggle('open')
+    sitemenu.classList.remove('open')
   }
 });
 

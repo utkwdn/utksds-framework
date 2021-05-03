@@ -5,4 +5,8 @@
 
 .btn {
 	text-decoration: none;
+	svg {
+  	height: 1.5 * $spacer;
+  	width: 1.5 * $spacer;
+	}
 }
