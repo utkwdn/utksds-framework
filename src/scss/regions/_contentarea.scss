@@ -1,0 +1,10 @@
+
+
+#content article >,
+#content article .entry-content > {
+  :not(.alignfull):not(.entry-content):not(.strip) {
+    @extend .container;
+  }
+}
+
+
