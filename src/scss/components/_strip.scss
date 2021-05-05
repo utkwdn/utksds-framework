@@ -2,6 +2,25 @@
   background: $utgray1;
   padding-top: $spacer*2;
   padding-bottom: $spacer*2;
+  width: 100vw;
+  margin-left: -($grid-gutter-width / 2);
+  @include media-breakpoint-up(sm) {
+  //  max-width: 540px;
+  margin-left: calc(-50vw + 255px);
+  }
+  @include media-breakpoint-up(md) {
+  //  max-width: 720px;
+  margin-left: calc(-50vw + 345px);
+  }
+  @include media-breakpoint-up(lg) {
+  //  max-width: 1060px;
+  margin-left: calc(-50vw + 515px);
+  }
+  @include media-breakpoint-up(xl) {
+   margin-left: calc(-50vw + 755px);
+  }
+
+
   .container .row {
     @extend .align-items-center;
   }
