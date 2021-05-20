@@ -30,8 +30,6 @@
     @include visually-hidden;
   }
   @include media-breakpoint-up(sm) {
-    width: auto;
-    height: auto;
     min-height: 45px;
     span {
       position: relative !important;
@@ -45,6 +43,7 @@
     }
   }
   @include media-breakpoint-up(lg) {
+    @include make-col(3);
     background-size: 55px 55px;
     min-height: 55px;
 	  padding-left: 65px;
