@@ -1,32 +1,24 @@
-// .navbar-nav {
-// 	.nav-link {
-// 		&.active {
-// 			font-weight: $font-weight-bolder;
-// 			color: $utsmokey;
-// 		}
-// 	}
-// }
-
 
 #searchHeader-close svg, #searchHeader-open svg {
  	fill: $utgray1;
  }
-  .navbar-toggler {
-  		#searchHeader-open {
+ 
+.navbar-toggler {
+		#searchHeader-open {
+		  display: none;
+		}
+	#searchHeader-close {
+		  display: inline-block;
+		}
+	&.collapsed {
+		#searchHeader-close {
   		  display: none;
   		}
-		#searchHeader-close {
+		#searchHeader-open {
   		  display: inline-block;
   		}
-		&.collapsed {
-  		#searchHeader-close {
-    		  display: none;
-    		}
-  		#searchHeader-open {
-    		  display: inline-block;
-    		}
-		  }
-  }
+	  }
+}
 
 
 
@@ -70,7 +62,7 @@
 
 // Here we put the full navigation off-canvas
 #site-navigation {
- @include media-breakpoint-down(md) {
+ @include media-breakpoint-down(lg) {
     background: $white;
     position: fixed;
     bottom: 0;
@@ -178,8 +170,8 @@
   }
 }
 
-@include media-breakpoint-up(lg) {
-  .navbar-horizontal {
-    background-color: $utcoolrock;
-  }
-}
+//@include media-breakpoint-up(lg) {
+//  .navbar-horizontal {
+//    background-color: $utcoolrock;
+//  }
+//}

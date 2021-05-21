@@ -6,18 +6,21 @@
   margin-left: -($grid-gutter-width / 2);
   @include media-breakpoint-up(sm) {
   //  max-width: 540px;
-  margin-left: calc(-50vw + 255px);
+  margin-left: calc(-50vw + 258px);
   }
   @include media-breakpoint-up(md) {
   //  max-width: 720px;
-  margin-left: calc(-50vw + 345px);
+  margin-left: calc(-50vw + 348px);
   }
   @include media-breakpoint-up(lg) {
   //  max-width: 1060px;
-  margin-left: calc(-50vw + 515px);
+  margin-left: calc(-50vw + 468px);
   }
   @include media-breakpoint-up(xl) {
-   margin-left: calc(-50vw + 755px);
+   margin-left: calc(-50vw + 558px);
+  }
+  @include media-breakpoint-up(xxl) {
+   margin-left: calc(-50vw + 648px);
   }
 
 

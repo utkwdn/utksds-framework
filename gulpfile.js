@@ -3,8 +3,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var sassdoc = require('sassdoc');
-var uglify = require('gulp-uglify');
-
+var uglify = require('gulp-uglify-es').default;
 
 
 // Set options
@@ -44,7 +43,8 @@ gulp.task('sass', function () {
    // Compile Scripts
    gulp.task('scripts', function () {
        return gulp.src (
-             ['./node_modules/bootstrap/dist/js/bootstrap.min.js',
+             [
+             './node_modules/bootstrap/dist/js/bootstrap.min.js',
              './node_modules/ally.js/ally.min.js',
              './src/js/utk.js']
      		)
