@@ -25,7 +25,7 @@
   background-repeat: no-repeat;
   background-position: left center;
   height: 45px;
-  width: 45px;
+  // width: 45px;
   span {
     @include visually-hidden;
   }
@@ -42,8 +42,11 @@
       white-space: normal !important;
     }
   }
+  @include media-breakpoint-up(md) {
+ //   @include make-col(5);
+  }
   @include media-breakpoint-up(lg) {
-    @include make-col(3);
+   // @include make-col(3);
     background-size: 55px 55px;
     min-height: 55px;
 	  padding-left: 65px;
