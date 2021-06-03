@@ -78,12 +78,12 @@
   }
   &.strip-gingham {
     background-color: $utorange;
-  	background-image: url('../i/strip_gingham.jpg');
-  	background-size: cover;
+  	background-image: url('../i/strip_gingham.gif');
+  	background-repeat: repeat;
   }
   &.strip-rain {
-    background-color: $utsmokey;
-  	background-image: url('../i/strip_rain.jpg');
+    background-color: $white;
+  	background-image: url('../i/strip_rain.gif');
   	background-size: cover;
   }
   &.p-sm {
