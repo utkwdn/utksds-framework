@@ -2,7 +2,7 @@
 
 
 
-.card {
+overlay.card {
   &::before {
   content: " ";
   position: absolute;
@@ -10,7 +10,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: aqua;    
+  opacity: 0%;
   }
   &.opacity-0::before {
     opacity: 0%;
