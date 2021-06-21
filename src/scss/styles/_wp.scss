@@ -22,3 +22,23 @@
 .has-text-align-right {
   @extend .text-end;
 }
+.wp-block-image {
+  @extend .d-flex;
+}
+
+
+.wp-has-aspect-ratio .wp-block-embed__wrapper {
+  @extend .ratio;
+}
+.wp-embed-aspect-1-1  .wp-block-embed__wrapper {
+  @extend .ratio-1x1;
+}
+.wp-embed-aspect-4-3 .wp-block-embed__wrapper {
+  @extend .ratio-4x3;
+}
+.wp-embed-aspect-16-9 .wp-block-embed__wrapper {
+  @extend .ratio-16x9;
+}
+.wp-embed-aspect-21-9 .wp-block-embed__wrapper {
+  @extend .ratio-21x9;
+}
