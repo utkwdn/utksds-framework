@@ -36,3 +36,31 @@
 #ut_identifier {
   box-shadow: 0px 11px 15px -16px rgba(0,0,0,0.75);
 }
+
+
+.btn-search {
+  font-size:  0.875em;
+  padding-top: 0.6rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  
+  #searchHeader-open,#searchHeader-close  {
+    height: 0.9rem;
+    width: 0.9rem;  
+    }
+  
+
+  span {
+    @include media-breakpoint-down(sm) {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0,0,0,0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  }
+}
