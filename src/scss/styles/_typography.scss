@@ -14,3 +14,12 @@ h1, .h1 {
 .list-letters {
   list-style-type: lower-alpha;
 }
+
+.text-condensed {
+  font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.text-letterspaced {
+  letter-spacing: 0.1em;
+}
