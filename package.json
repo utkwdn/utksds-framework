@@ -17,7 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "ally.js": "^1.4.1",
-    "bootstrap": "^5.0.1",
+    "bootstrap": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.1.0",
