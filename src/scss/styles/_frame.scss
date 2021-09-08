@@ -3,7 +3,7 @@
 	padding-left: 0;
 	// display: inline-block;
 	z-index: 4;
-//	width: max-content;
+  margin-bottom: 2rem;
 	&::after {
     position: absolute;
     content: " ";
@@ -17,8 +17,8 @@
     background: $utorange;
     z-index: -1;
     @include media-breakpoint-up(md) {
-      bottom: -1.5rem;
-      left: -1.5rem;
+      bottom: -1.25rem;
+      left: -1.25rem;
     }
 	}
 	&.right::after {
@@ -28,7 +28,7 @@
     right:  -$container-padding-x;
     left: auto;
     @include media-breakpoint-up(md) {
-      right:  -1.5rem;
+      right:  -1.25rem;
     }
 
 	}
