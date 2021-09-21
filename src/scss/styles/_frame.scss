@@ -1,10 +1,13 @@
-.framed {
+.framed  {
+//  justify-content: center;
+ // display: flex;
+  
 	position: relative;
 	padding-left: 0;
 	// display: inline-block;
 	z-index: 4;
   margin-bottom: 2rem;
-	&::after {
+	&::before {
     position: absolute;
     content: " ";
     width: 60%;
@@ -14,7 +17,9 @@
     // border-top: 0.6rem solid #FF8200;
     //border-left: 1.5rem solid #FF8200;
     //border-bottom: 1.5rem solid #FF8200;
-    background: $utorange;
+    //background: $utorange;
+    border-left: 1.25rem solid $utorange;
+    border-bottom: 1.25rem solid $utorange;
     z-index: -1;
     @include media-breakpoint-up(md) {
       bottom: -1.25rem;
@@ -35,5 +40,5 @@
 	&.gingham::after {
 		background-image: url("https://images.utk.edu/designsystem/v1/latest/assets/i/strip_gingham.gif");
 	}
-
+  
 }
