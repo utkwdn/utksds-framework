@@ -38,7 +38,7 @@
   }
   &.overlay-80::before {
     opacity: 80%;
-  }  
+  }
   &.overlay-90::before {
     opacity: 90%;
   }
@@ -59,4 +59,10 @@
     background-color: $dark;
   }
 
+}
+
+// WP Compatibility
+
+.wp-block-utksds-card  p {
+  @extend .card-text;
 }
