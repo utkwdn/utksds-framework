@@ -125,17 +125,21 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
-    "orange":     $utorange,
-    "smokey":     $utsmokey,
-//    "globe":      $utglobe,
-    "primary":    $primary,
-    "secondary":  $secondary,
-//    "success":    $success,
-//    "info":       $info,
-//    "warning":    $warning,
-//    "danger":     $danger,
-    "light":      $light,
-    "dark":       $dark
+    "orange":      $utorange,
+    "smokey":      $utsmokey,
+    "gray2":       $utgray2,
+    "summitt":     $utsummitt,
+    "utlink":      $utlinkriver,
+    "dark":        $dark,
+    "light":       $light,
+    "torch":       $uttorchweb,
+    "sunsphere":   $utsunsphere,
+    "fountain":    $utfountain,
+    "globe":       $utglobe,
+    "valley":      $utvalley,
+    "switchgrass": $utswitchgrass,
+    "leconte":     $utleconte
+
   ),
   $theme-colors
 );
