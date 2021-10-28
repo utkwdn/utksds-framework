@@ -1,0 +1,68 @@
+
+
+
+
+.card.overlay {
+  &::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0%;
+  }
+  &.overlay-0::before {
+    opacity: 0%;
+  }
+  &.overlay-10::before {
+    opacity: 10%;
+  }
+  &.overlay-20::before {
+    opacity: 20%;
+  }
+  &.overlay-30::before {
+    opacity: 30%;
+  }
+  &.overlay-40::before {
+    opacity: 40%;
+  }
+  &.overlay-50::before {
+    opacity: 50%;
+  }
+  &.overlay-60::before {
+    opacity: 60%;
+  }
+  &.overlay-70::before {
+    opacity: 70%;
+  }
+  &.overlay-80::before {
+    opacity: 80%;
+  }
+  &.overlay-90::before {
+    opacity: 90%;
+  }
+  &.overlay-100::before {
+    opacity: 100%;
+  }
+
+  &.bg-primary::before {
+    background-color: $primary;
+  }
+  &.bg-light::before {
+    background-color: $light;
+  }
+  &.bg-secondary::before {
+    background-color: $secondary;
+  }
+  &.bg-dark::before {
+    background-color: $dark;
+  }
+
+}
+
+// WP Compatibility
+
+.wp-block-utksds-card  p {
+  @extend .card-text;
+}

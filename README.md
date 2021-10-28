@@ -6,14 +6,14 @@ The Official UT Digital Design System Framework was made to help UT web develope
 
 ## Requirements:
 
-- NPM
-- Gulp 4.0.2
+- npm [npm Docs: Installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- Node.js 14 (using a [Node version manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-version-manager-to-install-node-js-and-npm) is highly recommended)
+- Gulp 4.0.2 (will install as a dependency)
 
 ## Installing this project
 
-1. run `npm install --save-dev` to install dependencies
-
-
+1.  make sure you are running Node.js 14 prior to install
+2.  run `npm install` to install dependencies
 
 ## Using Gulp Scripts
 
@@ -21,6 +21,6 @@ The Official UT Digital Design System Framework was made to help UT web develope
 
 If all that is needed is to build the files, you can run `gulp build`
 
-***
+---
 
 Documentation on style use at [getbootsrap.com](https://getbootstrap.com).

@@ -1,9 +1,12 @@
-footer#colophon {
-	border-top: solid $spacer/2 $utorange;
-	padding-top: $spacer;
-}
 
-#utk_footer_logo {
-  max-width: 300px;
-  margin-bottom: $spacer*2;
+
+// Contact site-info
+ .wp-block-social-links {
+  @extend .list-inline;
+  li {
+    @extend .list-inline-item;
+    svg {
+      fill: $white;
+    }
+  }
 }

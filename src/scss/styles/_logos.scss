@@ -1,8 +1,9 @@
-#utk_powert {
-	height: $spacer*2;
-	width:  $spacer*2;
-}
-#utk_logo_header, #utk_logo_footer {
-	width: 190px;
-	height: 42px;
+#ut_logo {
+  width: 190px;
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  @include media-breakpoint-up(md) { 
+    width: 250px;
+  }
 }

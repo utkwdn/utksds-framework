@@ -1,7 +1,7 @@
 
 #bellows {
   // @include make-container();
-  margin-top: 4rem;
+  margin-top: 2rem;
   @include media-breakpoint-up(xl) {
     margin-top: 0;
   }
@@ -9,6 +9,10 @@
    // float: left;
     &:hover {
       background: $utgray1;
+    }
+    &:focus {
+      border: $spacer/6 solid $utorange;
+      margin: -$spacer/6;
     }
   }
   a {

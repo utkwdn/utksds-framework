@@ -16,27 +16,27 @@
 }
 
 
-.has-globe-color {
-  @extend .text-globe;
-}
-
-
-.has-success-color {
-  @extend .text-success;
-}
+////.has-globe-color {
+////  @extend .text-globe;
+////}
+////
+////
+////.has-success-color {
+////  @extend .text-success;
+////}
 
 
 .has-primary-color {
-  @extend .text-primary;
+  @extend .text-utlink;
 }
 
 
-.has-info-color {
-  @extend .text-info;
-}
-.has-warning-color {
-  @extend .text-warning;
-}
-.has-danger-color {
-  @extend .text-danger;
-}
+//.has-info-color {
+//  @extend .text-info;
+//}
+//.has-warning-color {
+//  @extend .text-warning;
+//}
+//.has-danger-color {
+//  @extend .text-danger;
+//}

@@ -1,8 +1,12 @@
 .wp-block-button__link {
     @extend .btn;
-    @extend .btn-primary;
+    @extend .btn-link;
 }
 
 .btn {
 	text-decoration: none;
+	svg {
+  	height: 1.5 * $spacer;
+  	width: 1.5 * $spacer;
+	}
 }

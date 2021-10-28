@@ -1,25 +1,44 @@
-@include media-breakpoint-up(lg) {
-	.framed {
-		position: relative;
-		&::before {
-			position: absolute;
-			content: "";
-			width: 4*$spacer;
-			height: 4*$spacer;
-			top: -2*$spacer;
-			left: -2*$spacer;
-			border-top:  0.4*$spacer solid $utorange;
-			border-left: 0.4*$spacer solid $utorange;
-		}
-//		&::after {
-//			position: absolute;
-//			content: "";
-//			width: 4*$spacer;
-//			height: 4*$spacer;
-//			bottom: -2*$spacer;
-//			right: -2*$spacer;
-//			border-right:  0.25*$spacer solid $utorange;
-//			border-bottom: 0.25*$spacer solid $utorange;
-//		}
-	}	
+.framed  {
+//  justify-content: center;
+ // display: flex;
+  
+	position: relative;
+	padding-left: 0;
+	// display: inline-block;
+	z-index: 4;
+  margin-bottom: 2rem;
+	&::before {
+    position: absolute;
+    content: " ";
+    width: 60%;
+    height: calc(100% - 2rem);
+    bottom: -$container-padding-x;
+    left: -$container-padding-x;
+    // border-top: 0.6rem solid #FF8200;
+    //border-left: 1.5rem solid #FF8200;
+    //border-bottom: 1.5rem solid #FF8200;
+    //background: $utorange;
+    border-left: 1.25rem solid $utorange;
+    border-bottom: 1.25rem solid $utorange;
+    z-index: -1;
+    @include media-breakpoint-up(md) {
+      bottom: -1.25rem;
+      left: -1.25rem;
+    }
+	}
+	&.right::after {
+    //border-right: 1.5rem solid #FF8200;
+    //border-bottom: 1.5rem solid #FF8200;
+    border-left: 0;
+    right:  -$container-padding-x;
+    left: auto;
+    @include media-breakpoint-up(md) {
+      right:  -1.25rem;
+    }
+
+	}
+	&.gingham::after {
+		background-image: url("https://images.utk.edu/designsystem/v1/latest/assets/i/strip_gingham.gif");
+	}
+  
 }

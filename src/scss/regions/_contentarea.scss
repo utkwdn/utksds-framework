@@ -1,0 +1,24 @@
+
+
+#content article >,
+#content article .entry-content > {
+  :not(.alignfull):not(.entry-content):not(.strip) {
+  width: calc(100% - 30px);
+  margin-right: auto;
+  margin-left: auto;
+
+  @include media-breakpoint-up(sm) {
+    max-width: 540px;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 720px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 1060px;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: 1540px;
+  }
+
+  }
+}
