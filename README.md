@@ -18,8 +18,8 @@ You may now develop in this directory. The assets you need, such as SASS partial
 ### Step 1, Installing the Requirements:
 
 1. Not required, but highly recommended. [Install NVM by following these instructions](https://github.com/nvm-sh/nvm#installing-and-updating).
-2. Install Node.js **Important**: _You must use version 14 of Node with this project. Newer versions will not work_.
-  - [Install using NVM (recommended)](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/#using-nvm-to-install-node).
+  - **Mac Users**: If you get nvm: command not found after running the install script (and you likely will), be sure to [follow the troubleshooting steps](https://github.com/nvm-sh/nvm#troubleshooting-on-macos).
+2. Install Node.js **Important**: _You must use version 14 of Node with this project. Newer versions will not work_. [Install using NVM (recommended)](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/#using-nvm-to-install-node).
 3. [Install the Gulp Command Line Utility](https://gulpjs.com/docs/en/getting-started/quick-start#install-the-gulp-command-line-utility).
 
 ### Step 2, Installing the this project:
@@ -33,7 +33,7 @@ You may now develop in this directory. The assets you need, such as SASS partial
 
 This project uses the task runner [Gulp](https://gulpjs.com/) to compile and compress javascript and css. All you need to do to edit is to use terminal to run the command `gulp` in the project's directory.
 
-Gulp will watch the `/src/` directory for changes and creates files in `/build/`. As you make changes to the files in `/src/`, compiled files will be created in `/build/`.
+Gulp will watch the `/src/` directory for changes and creates files in `/build/`. As you make changes to the files in `/src/`, compiled and compressed files will be created in `/build/`.
 
 ---
 
