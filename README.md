@@ -4,22 +4,36 @@
 
 The Official UT Digital Design System Framework was made to help UT web developers build interfaces that match UT's visual identity and make consistent the user interface of a variety of digital products.
 
-## Requirements:
+## To start a new project using the University of Tennessee, Knoxville Design System Framework
 
-- npm [npm Docs: Installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- Node.js 14 (using a [Node version manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-version-manager-to-install-node-js-and-npm) is highly recommended)
-- Gulp 4.0.2 (will install as a dependency)
+Node Package Manager is required.
 
-## Installing this project
+1. In your terminal change to the directory you want to begin your project in.
+2. Type `npm i utksds-framework`
 
-1.  make sure you are running Node.js 14 prior to install
-2.  run `npm install` to install dependencies
+You may now develop in this directory. The assets you need, such as SASS partials, and javascript partials are located in `node_modules/utksds-framework/src/`.
 
-## Using Gulp Scripts
+## Installing this project to edit, or contribute to it, or to compile your own version of it.
 
-`gulp` watches the `/src/` directory for changes and creates files in `/build/`
+### Step 1, Installing the Requirements:
 
-If all that is needed is to build the files, you can run `gulp build`
+1. Not required, but highly recommended. [Install NVM by following these instructions](https://github.com/nvm-sh/nvm#installing-and-updating).
+2. Install Node.js **Important**: _You must use version 14 of Node with this project. Newer versions will not work_.
+  - [Install using NVM (recommended)](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/#using-nvm-to-install-node).
+3. [Install the Gulp Command Line Utility](https://gulpjs.com/docs/en/getting-started/quick-start#install-the-gulp-command-line-utility).
+
+### Step 2, Installing the this project:
+
+1. Download or git clone this project by typing `git clone git@github.com:utkwdn/utksds-framework.git`.
+2. In your terminal, change to the new /utksds-framework/ directory.
+3. Ensure you are running Node.js 14 prior to installation, by typing `node -v`
+4. Type `npm install` to install dependencies.
+
+## Developing the framework
+
+This project uses the task runner [Gulp](https://gulpjs.com/) to compile and compress javascript and css. All you need to do to edit is to use terminal to run the command `gulp` in the project's directory.
+
+Gulp will watch the `/src/` directory for changes and creates files in `/build/`. As you make changes to the files in `/src/`, compiled files will be created in `/build/`.
 
 ---
 
