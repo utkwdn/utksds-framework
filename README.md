@@ -15,17 +15,16 @@ You may now develop in this directory. The assets you need, such as SASS partial
 
 ## Installing this project to edit, or contribute to it, or to compile your own version of it.
 
-### Step 1, Installing the Requirements:
+### Step 1, Installing the requirements:
 
-1. Not required, but highly recommended. [Install NVM by following these instructions](https://github.com/nvm-sh/nvm#installing-and-updating).
-  - **Mac Users**: If you get nvm: command not found after running the install script (and you likely will), be sure to [follow the troubleshooting steps](https://github.com/nvm-sh/nvm#troubleshooting-on-macos).
+1. Not required, but highly recommended. [Install NVM by following these instructions](https://github.com/nvm-sh/nvm#installing-and-updating). **Mac Users**: If you get an "nvm: command not found" error after running the install script (and you likely will), be sure to [follow the troubleshooting steps](https://github.com/nvm-sh/nvm#troubleshooting-on-macos).
 2. Install Node.js **Important**: _You must use version 14 of Node with this project. Newer versions will not work_. [Install using NVM (recommended)](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/#using-nvm-to-install-node).
 3. [Install the Gulp Command Line Utility](https://gulpjs.com/docs/en/getting-started/quick-start#install-the-gulp-command-line-utility).
 
 ### Step 2, Installing the this project:
 
-1. Download or git clone this project by typing `git clone git@github.com:utkwdn/utksds-framework.git`.
-2. In your terminal, change to the new /utksds-framework/ directory.
+1. Download or `git clone` this project by typing `git clone git@github.com:utkwdn/utksds-framework.git`.
+2. In your terminal, change to the new `/utksds-framework/` directory.
 3. Ensure you are running Node.js 14 prior to installation, by typing `node -v`
 4. Type `npm install` to install dependencies.
 
