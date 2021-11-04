@@ -1,11 +1,10 @@
-![Power T](https://images.utk.edu/designsystem/2020/assets/i/icon-114x114.png)
 <p align="center">
-  <a href="https://getbootstrap.com/">
-    <img src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo" width="200" height="165">
+  <a href="https://www.utk.edu/">
+    <img src="https://images.utk.edu/designsystem/2020/assets/i/icon-114x114.png" alt="Power T">
   </a>
 </p>
 
-<h1 align="center">University of Tennessee, Knoxville Design System Framework</h1>
+<h3 align="center">University of Tennessee, Knoxville Design System Framework</h3>
 
 **Version 0.0.6**
 
