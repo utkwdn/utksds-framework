@@ -6,6 +6,8 @@
 
 <h3 align="center">University of Tennessee, Knoxville Design System Framework</h3>
 
+---
+
 **Version 0.0.6**
 
 The Official UT Digital Design System Framework (UTKSDS) was made to help UT web developers build interfaces that match UT's visual identity and make consistent the user interface of a variety of digital products.
