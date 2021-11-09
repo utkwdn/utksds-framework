@@ -3,7 +3,10 @@
   "version": "0.0.5",
   "description": "A user interface framework based upon Bootstrap for designing site at the Unversity of Tennessee, Knoxville.",
   "main": "gulpfile.js",
-  "files": ["gulpfile.js", "src/*"],
+  "files": [
+    "gulpfile.js",
+    "src/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
