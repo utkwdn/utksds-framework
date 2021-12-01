@@ -3,7 +3,7 @@ body {
 }
 .strip {
   width: 100vw;
-  margin-left: -($grid-gutter-width / 2);
+  margin-left: calc(-#{$grid-gutter-width} / 2);
 //   @include media-breakpoint-up(sm) {
   //  max-width: 540px;
 //  margin-left: calc(-50vw + 258px);
@@ -26,13 +26,13 @@ body {
   @include media-breakpoint-up(xxl) {
    margin-left: calc(-50vw + 748px);
    -ms-margin-left: calc(-50vw + 728px);
-  } 
+  }
 }
 .strip-fluid {
   @include media-breakpoint-up(xxl) {
     margin-left: calc(-50vw + 748px);
     -ms-margin-left: calc(-50vw + 728px);
-  } 
+  }
 }
 
 .strip, .strip-fluid {

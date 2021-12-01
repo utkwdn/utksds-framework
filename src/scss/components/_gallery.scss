@@ -152,7 +152,7 @@
   .wp-block-gallery.columns-7 .blocks-gallery-image, .wp-block-gallery.columns-7 .blocks-gallery-item,
 .blocks-gallery-grid.columns-7 .blocks-gallery-image,
 .blocks-gallery-grid.columns-7 .blocks-gallery-item {
-    width: calc(14.2857142857% - 0.857142857$spacer);
+    width: calc(14.2857142857% - 0.857142857%);
     margin-right: $spacer;
   }
   .wp-block-gallery.columns-8 .blocks-gallery-image, .wp-block-gallery.columns-8 .blocks-gallery-item,

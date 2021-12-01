@@ -26,8 +26,11 @@
     "bootstrap": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.1.0",
     "gulp-uglify-es": "^2.0.0",
     "sassdoc": "^2.7.3"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.44.0"
   }
 }

@@ -1,6 +1,6 @@
 // Load plugins
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var concat = require('gulp-concat');
 var sassdoc = require('sassdoc');
 var uglify = require('gulp-uglify-es').default;
@@ -40,6 +40,7 @@ gulp.task('sass', function () {
 
 
 
+
    // Compile Scripts
    gulp.task('scripts', function () {
        return gulp.src (
@@ -53,7 +54,7 @@ gulp.task('sass', function () {
    		.pipe(gulp.dest('./build/assets/js')
        );
    });
-   
+
 
 
 gulp.task('watch', function() {
