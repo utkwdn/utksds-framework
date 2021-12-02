@@ -19,14 +19,13 @@ The Official UT Digital Design System Framework (UTKSDS) was made to help UT web
 The UTKSDS uses Node to compile and compress Javascript and CSS from source files.
 
 1. Not required, but highly recommended. [Install NVM by following these instructions](https://github.com/nvm-sh/nvm#installing-and-updating). **Mac Users**: If you get an "nvm: command not found" error after running the install script (and you likely will), be sure to [follow the troubleshooting steps](https://github.com/nvm-sh/nvm#troubleshooting-on-macos).
-2. Install Node.js **Important**: _You must use version 14 of Node with this project. Newer versions will not work_. [Install using NVM (recommended)](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/#using-nvm-to-install-node).
+2. Install Node.js [Install using NVM (recommended)](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/#using-nvm-to-install-node).
 
 ### Step 2, Installing the this project:
 
 1. Download or `git clone` this project by typing `git clone git@github.com:utkwdn/utksds-framework.git`.
 2. In your terminal, change to the new `/utksds-framework/` directory.
-3. Ensure you are running Node.js 14 prior to installation, by typing `node -v`
-4. Type `npm install` to install dependencies.
+3. Type `npm install` to install dependencies.
 
 ---
 
