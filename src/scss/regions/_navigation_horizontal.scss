@@ -2,7 +2,7 @@
 #searchHeader-close svg, #searchHeader-open svg {
  	fill: $utgray1;
  }
- 
+
 .navbar-toggler {
 		#searchHeader-open {
 		  display: none;
@@ -28,7 +28,7 @@
 }
 #site-horizontal-navigation .menu-item a {
   @extend .nav-link;
-  
+
 }
 
 // Because the navigation in 'mobile' is in a single div, and the navigation in 'desktop' appears in two places we have to do some nasty hiding and showing with css.
@@ -116,7 +116,7 @@
     }
   }
   li a {
-    padding: $spacer/2 0;
+    padding: calc($spacer / 2) 0;
     text-decoration: none;
     color: $utsmokeytext;
     display: block;
@@ -130,9 +130,9 @@
        margin-bottom: 0.5 * $spacer;
         &.current-menu-item > a {
           font-weight: bold;
-        }       
+        }
        a {
-         padding: $spacer/2 $spacer;
+         padding: calc($spacer / 2) $spacer;
          background: $utgray1;
          border-radius: $border-radius;
        }
@@ -141,7 +141,7 @@
 
 
   // now let's style for bigger screens.
-  
+
   @include media-breakpoint-up(lg) {
     display: flex;
     flex-wrap: wrap;

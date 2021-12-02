@@ -1,6 +1,6 @@
 // Load plugins
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var concat = require('gulp-concat');
 var sassdoc = require('sassdoc');
 var uglify = require('gulp-uglify-es').default;
@@ -36,6 +36,7 @@ gulp.task('sass', function () {
    .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
    .pipe(gulp.dest(output));
 });
+
 
 
 
