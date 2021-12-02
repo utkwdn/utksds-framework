@@ -23,7 +23,6 @@
   "author": "OCM",
   "license": "ISC",
   "dependencies": {
-    "ally.js": "^1.4.1",
     "bootstrap": "^5.1.0",
     "gulp-cli": "^2.3.0",
     "gulp": "^4.0.2",
