@@ -45,7 +45,6 @@ gulp.task('sass', function () {
        return gulp.src (
              [
              './node_modules/bootstrap/dist/js/bootstrap.min.js',
-             './node_modules/ally.js/ally.min.js',
              './src/js/utk.js']
      		)
    		.pipe(concat('utk.js'))
@@ -53,7 +52,7 @@ gulp.task('sass', function () {
    		.pipe(gulp.dest('./build/assets/js')
        );
    });
-   
+
 
 
 gulp.task('watch', function() {
