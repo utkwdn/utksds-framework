@@ -1,6 +1,6 @@
 {
   "name": "utksds-framework",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A user interface framework based upon Bootstrap for designing site at the Unversity of Tennessee, Knoxville.",
   "main": "gulpfile.js",
   "files": [
