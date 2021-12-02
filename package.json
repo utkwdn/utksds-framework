@@ -1,11 +1,17 @@
 {
-  "name": "utkds-framework",
-  "version": "0.0.5",
+  "name": "utksds-framework",
+  "version": "0.0.7",
   "description": "A user interface framework based upon Bootstrap for designing site at the Unversity of Tennessee, Knoxville.",
   "main": "gulpfile.js",
-  "files": ["gulpfile.js", "src/*"],
+  "files": [
+    "gulpfile.js",
+    "src/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "gulp build",
+    "watch": "gulp watch",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -17,12 +23,15 @@
   "author": "OCM",
   "license": "ISC",
   "dependencies": {
-    "ally.js": "^1.4.1",
     "bootstrap": "^5.1.0",
+    "gulp-cli": "^2.3.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.1.0",
     "gulp-uglify-es": "^2.0.0",
     "sassdoc": "^2.7.3"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.44.0"
   }
 }

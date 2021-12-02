@@ -1,6 +1,6 @@
 // Load plugins
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var concat = require('gulp-concat');
 var sassdoc = require('sassdoc');
 var uglify = require('gulp-uglify-es').default;
@@ -40,12 +40,12 @@ gulp.task('sass', function () {
 
 
 
+
    // Compile Scripts
    gulp.task('scripts', function () {
        return gulp.src (
              [
              './node_modules/bootstrap/dist/js/bootstrap.min.js',
-             './node_modules/ally.js/ally.min.js',
              './src/js/utk.js']
      		)
    		.pipe(concat('utk.js'))
@@ -53,7 +53,7 @@ gulp.task('sass', function () {
    		.pipe(gulp.dest('./build/assets/js')
        );
    });
-   
+
 
 
 gulp.task('watch', function() {
@@ -71,3 +71,4 @@ gulp.task('watch', function() {
 
 gulp.task('default', gulp.series('sass','scripts','watch'));
 
+gulp.task('build', gulp.series('sass','scripts'));
