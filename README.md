@@ -35,9 +35,11 @@ The UTKSDS uses Node and Gulp to compile and compress Javascript and CSS from so
 
 ## Developing the framework
 
-This project uses the task runner [Gulp](https://gulpjs.com/) to compile and compress javascript and css. All you need to do to edit is to use terminal to run the command `gulp` in the project's directory.
+This project uses the task runner [Gulp](https://gulpjs.com/) to compile and compress javascript and css, which is installed on `npm install`. All you need to do to edit is to use terminal to run the command `npm run watch` in the project's directory.
 
 Gulp will watch the `/src/` directory for changes and creates files in `/build/`. As you make changes to the files in `/src/`, compiled and compressed files will be created in `/build/`.
+
+If you make changes after install and want them ready for production without watch being enabled, run the command `npm run build`.
 
 ---
 
