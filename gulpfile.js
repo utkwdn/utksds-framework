@@ -19,7 +19,6 @@ var inputscripts  = './src/js/';
 var output        = './build/assets/css';
 
 
-
 // // Compile Stylesheets
 // gulp.task('sass', function () {
 //   return gulp
@@ -33,13 +32,12 @@ var output        = './build/assets/css';
 // });
 gulp.task('sass', function () {
  return gulp.src(input)
+   .pipe(sass({
+      includePaths: ["./node_modules/bootstrap/scss","./src/scss"]
+   }).on('error', sass.logError))
    .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
    .pipe(gulp.dest(output));
 });
-
-
-
-
 
    // Compile Scripts
    gulp.task('scripts', function () {

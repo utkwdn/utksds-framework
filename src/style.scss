@@ -2,99 +2,101 @@
 
 // scss-docs-start import-stack
 // Configuration
-@import "./node_modules/bootstrap/scss/functions";
-@import "./src/scss/custom_variables";
-@import "./node_modules/bootstrap/scss/variables";
-@import "./node_modules/bootstrap/scss/mixins";
-@import "./node_modules/bootstrap/scss/utilities";
+
+
+@import "functions";
+@import "custom_variables";
+@import "variables";
+@import "mixins";
+@import "utilities";
 
 // Layout & components
-@import "./node_modules/bootstrap/scss/root";
-@import "./node_modules/bootstrap/scss/reboot";
-@import "./node_modules/bootstrap/scss/type";
-@import "./node_modules/bootstrap/scss/images";
-@import "./node_modules/bootstrap/scss/containers";
-@import "./node_modules/bootstrap/scss/grid";
-@import "./node_modules/bootstrap/scss/tables";
-@import "./node_modules/bootstrap/scss/forms";
-@import "./node_modules/bootstrap/scss/buttons";
-@import "./node_modules/bootstrap/scss/transitions";
-@import "./node_modules/bootstrap/scss/dropdown";
-@import "./node_modules/bootstrap/scss/button-group";
-@import "./node_modules/bootstrap/scss/nav";
-@import "./node_modules/bootstrap/scss/navbar";
-@import "./node_modules/bootstrap/scss/card";
-@import "./node_modules/bootstrap/scss/accordion";
-@import "./node_modules/bootstrap/scss/breadcrumb";
-@import "./node_modules/bootstrap/scss/pagination";
-@import "./node_modules/bootstrap/scss/badge";
-@import "./node_modules/bootstrap/scss/alert";
-@import "./node_modules/bootstrap/scss/progress";
-@import "./node_modules/bootstrap/scss/list-group";
-@import "./node_modules/bootstrap/scss/close";
-@import "./node_modules/bootstrap/scss/toasts";
-@import "./node_modules/bootstrap/scss/modal";
-@import "./node_modules/bootstrap/scss/tooltip";
-@import "./node_modules/bootstrap/scss/popover";
-@import "./node_modules/bootstrap/scss/carousel";
-@import "./node_modules/bootstrap/scss/spinners";
-@import "./node_modules/bootstrap/scss/offcanvas";
-@import "./node_modules/bootstrap/scss/placeholders";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+@import "placeholders";
 
 // Helpers
-@import "./node_modules/bootstrap/scss/helpers";
+@import "helpers";
 
 // Utilities
-@import "./node_modules/bootstrap/scss/utilities/api";
+@import "utilities/api";
 // scss-docs-end import-stack
 
 
 // UT Regions
 
-// @import "./src/scss/regions/contentarea";
-@import "./src/scss/regions/extended_footer";
-@import "./src/scss/regions/footers";
-@import "./src/scss/regions/headers";
-@import "./src/scss/regions/navigation_horizontal";
-// @import "./src/scss/regions/navigation_leftrail";
-// @import "./src/scss/regions/navigation_megamenu";
-// @import "./src/scss/regions/navigation_offcanvas";
-@import "./src/scss/regions/navigation_unit";
-@import "./src/scss/regions/navigation_universal";
-@import "./src/scss/regions/search_area";
-@import "./src/scss/regions/sidebar";
-@import "./src/scss/regions/universal-header";
-@import "./src/scss/regions/universal-footer";
+// @import "regions/contentarea";
+@import "regions/extended_footer";
+@import "regions/footers";
+@import "regions/headers";
+@import "regions/navigation_horizontal";
+// @import "regions/navigation_leftrail";
+// @import "regions/navigation_megamenu";
+// @import "regions/navigation_offcanvas";
+@import "regions/navigation_unit";
+@import "regions/navigation_universal";
+@import "regions/search_area";
+@import "regions/sidebar";
+@import "regions/universal-header";
+@import "regions/universal-footer";
 
 
 // UT Components
 
-@import "./src/scss/components/accordion_folds";
-@import "./src/scss/components/calendars";
-@import "./src/scss/components/cards";
-@import "./src/scss/components/forms";
-@import "./src/scss/components/gallery";
-@import "./src/scss/components/profiles";
-@import "./src/scss/components/promos";
-@import "./src/scss/components/jumbotron";
-@import "./src/scss/components/strip";
-//@import "./src/scss/components/sliders";
+@import "components/accordion_folds";
+@import "components/calendars";
+@import "components/cards";
+@import "components/forms";
+@import "components/gallery";
+@import "components/profiles";
+@import "components/promos";
+@import "components/jumbotron";
+@import "components/strip";
+//@import "components/sliders";
 
 
 // UT Styles
-@import "./src/scss/styles/breadcrumbs";
-@import "./src/scss/styles/buttons";
-@import "./src/scss/styles/blockquote";
-@import "./src/scss/styles/highlight_boxes";
-@import "./src/scss/styles/frame";
-@import "./src/scss/styles/gutenberg";
-@import "./src/scss/styles/images";
-@import "./src/scss/styles/orange_hr";
-@import "./src/scss/styles/orange_mark";
-@import "./src/scss/styles/search_forms";
-@import "./src/scss/styles/typography";
-@import "./src/scss/styles/background";
-@import "./src/scss/styles/textcolors";
-@import "./src/scss/styles/pagination";
-@import "./src/scss/styles/logos";
-@import "./src/scss/styles/wp";
+@import "styles/breadcrumbs";
+@import "styles/buttons";
+@import "styles/blockquote";
+@import "styles/highlight_boxes";
+@import "styles/frame";
+@import "styles/gutenberg";
+@import "styles/images";
+@import "styles/orange_hr";
+@import "styles/orange_mark";
+@import "styles/search_forms";
+@import "styles/typography";
+@import "styles/background";
+@import "styles/textcolors";
+@import "styles/pagination";
+@import "styles/logos";
+@import "styles/wp";
