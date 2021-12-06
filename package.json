@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "files": [
     "gulpfile.js",
-    "src/*"
+    "src/*",
+    "dist/*"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,15 +24,16 @@
   "author": "OCM",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.1.0",
-    "gulp-cli": "^2.3.0",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-uglify-es": "^2.0.0",
-    "sassdoc": "^2.7.3"
+    "bootstrap": "^5.1.0"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
     "gulp-sass": "^5.0.0",
-    "sass": "^1.44.0"
+    "gulp-uglify-es": "^2.0.0",
+    "package-preview": "^4.0.0",
+    "sass": "^1.44.0",
+    "sassdoc": "^2.7.3"
   }
 }

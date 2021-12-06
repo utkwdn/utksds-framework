@@ -4,99 +4,95 @@
 // Configuration
 
 
-@import "functions";
-@import "custom_variables";
-@import "variables";
-@import "mixins";
-@import "utilities";
+@import "bootstrap/scss/functions";
+@import "scss/custom_variables";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
 
 // Layout & components
-@import "root";
-@import "reboot";
-@import "type";
-@import "images";
-@import "containers";
-@import "grid";
-@import "tables";
-@import "forms";
-@import "buttons";
-@import "transitions";
-@import "dropdown";
-@import "button-group";
-@import "nav";
-@import "navbar";
-@import "card";
-@import "accordion";
-@import "breadcrumb";
-@import "pagination";
-@import "badge";
-@import "alert";
-@import "progress";
-@import "list-group";
-@import "close";
-@import "toasts";
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
-@import "spinners";
-@import "offcanvas";
-@import "placeholders";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/spinners";
+@import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/placeholders";
 
 // Helpers
-@import "helpers";
+@import "bootstrap/scss/helpers";
 
 // Utilities
-@import "utilities/api";
+@import "bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 
 
 // UT Regions
 
 // @import "regions/contentarea";
-@import "regions/extended_footer";
-@import "regions/footers";
-@import "regions/headers";
-@import "regions/navigation_horizontal";
-// @import "regions/navigation_leftrail";
-// @import "regions/navigation_megamenu";
-// @import "regions/navigation_offcanvas";
-@import "regions/navigation_unit";
-@import "regions/navigation_universal";
-@import "regions/search_area";
-@import "regions/sidebar";
-@import "regions/universal-header";
-@import "regions/universal-footer";
+@import "scss/regions/extended_footer";
+@import "scss/regions/footers";
+@import "scss/regions/headers";
+@import "scss/regions/navigation_horizontal";
+@import "scss/regions/navigation_unit";
+@import "scss/regions/navigation_universal";
+@import "scss/regions/search_area";
+@import "scss/regions/sidebar";
+@import "scss/regions/universal-header";
+@import "scss/regions/universal-footer";
 
 
 // UT Components
 
-@import "components/accordion_folds";
-@import "components/calendars";
-@import "components/cards";
-@import "components/forms";
-@import "components/gallery";
-@import "components/profiles";
-@import "components/promos";
-@import "components/jumbotron";
-@import "components/strip";
-//@import "components/sliders";
+@import "scss/components/accordion_folds";
+@import "scss/components/calendars";
+@import "scss/components/cards";
+@import "scss/components/forms";
+@import "scss/components/gallery";
+@import "scss/components/profiles";
+@import "scss/components/promos";
+@import "scss/components/jumbotron";
+@import "scss/components/strip";
 
 
 // UT Styles
-@import "styles/breadcrumbs";
-@import "styles/buttons";
-@import "styles/blockquote";
-@import "styles/highlight_boxes";
-@import "styles/frame";
-@import "styles/gutenberg";
-@import "styles/images";
-@import "styles/orange_hr";
-@import "styles/orange_mark";
-@import "styles/search_forms";
-@import "styles/typography";
-@import "styles/background";
-@import "styles/textcolors";
-@import "styles/pagination";
-@import "styles/logos";
-@import "styles/wp";
+@import "scss/styles/breadcrumbs";
+@import "scss/styles/buttons";
+@import "scss/styles/blockquote";
+@import "scss/styles/highlight_boxes";
+@import "scss/styles/frame";
+@import "scss/styles/gutenberg";
+@import "scss/styles/images";
+@import "scss/styles/orange_hr";
+@import "scss/styles/orange_mark";
+@import "scss/styles/search_forms";
+@import "scss/styles/typography";
+@import "scss/styles/background";
+@import "scss/styles/textcolors";
+@import "scss/styles/pagination";
+@import "scss/styles/logos";
+@import "scss/styles/wp";
