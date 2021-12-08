@@ -52,71 +52,44 @@ body {
   &.strip-white {
     background-color: white;
   }
+  &.strip-orange {
+    background-color: $utorange;
+  }
+  &.strip-dark{
+    background-color: $dark;
+  }
+  &.strip-smokey {
+    background-color: $utsmokey;
+  }
   &.strip-gray1 {
     background-color: $utgray1;
   }
   &.strip-gray2 {
     background-color: $utgray2;
   }
-  &.strip-smokey {
-    background-color: $utsmokey;
+  &.strip-summitt {
+    background-color: $utsummitt;
   }
-  &.strip-pattern {
-    background-color: $utsmokey;
-  	background-image: url('../i/strip_pattern.gif');
-  	background-size: cover;
+  &.strip-utlink {
+    background-color: $utlinkriver;
   }
-  &.strip-seal {
-    background-color: $utgray1;
-  	background-image: url('../i/strip_seal.jpg');
-  	background-size: cover;
+  &.strip-switchgrass {
+    background-color: $utswitchgrass;
   }
-  &.strip-ayres {
-    background-color: $utsmokey;
-  	background-image: url('../i/strip_ayres.jpg');
-  	background-size: cover;
+  &.strip-torch {
+    background-color: $uttorch;
   }
-  &.strip-library {
-    background-color: $utgray1;
-  	background-image: url('../i/strip_library.jpg');
-  	background-size: cover;
+  &.strip-sunsphere {
+    background-color: $utsunsphere;
   }
-  &.strip-smokies {
-    background-color: $utsmokey;
-  	background-image: url('../i/strip_smokies.jpg');
-  	background-size: cover;
+  &.strip-globe {
+    background-color: $utglobe;
   }
-  &.strip-lightsmokies {
-    background-color: $utgray1;
-  	background-image: url('../i/strip_lightsmokies.jpg');
-  	background-size: cover;
+  &.strip-valley {
+    background-color: $utvalley;
   }
-  &.strip-mountains {
-    background-color: $utgray1;
-  	background-image: url('../i/strip_mountains.svg');
-  	background-size: cover;
-  }
-  &.strip-ped {
-    background-color: $utsmokey;
-  	background-image: url('../i/strip_ped.jpg');
-  	background-size: cover;
-  }
-  &.strip-gingham {
-    background-color: $utorange;
-  	background-image: url('../i/strip_gingham.gif');
-  	background-repeat: repeat;
-  	background-size: auto;
-  }
-  &.strip-dots {
-    background-color: $utorange;
-  	background-image: url('../i/strip_dots.gif');
-  	background-repeat: no-repeat;
-  	background-size: auto;
-  }
-  &.strip-rain {
-    background-color: $white;
-  	background-image: url('../i/strip_rain.gif');
-  	background-size: cover;
+  &.strip-leconte {
+    background-color: $utleconte;
   }
   &.p-sm {
     padding-bottom: 1 * $spacer;
