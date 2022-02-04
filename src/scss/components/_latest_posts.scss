@@ -1,0 +1,163 @@
+.wp-block-latest-posts__list {
+  padding-left: 0;
+  li {
+    border-bottom: 2px solid $utorange;
+    padding-left: 0;
+    padding: 1rem 1rem 0.5rem 1rem;
+    list-style-type: none;
+    position: relative;
+    .wp-block-latest-posts__featured-image {
+      display: block;
+      // width: 70%;
+      // max-width: 500px;
+      // max-height: 200px;
+      // overflow: hidden;
+      margin-bottom: 1rem;
+      &:before {
+        content: " ";
+        border-left: 3px solid green;
+        display: block;
+      }
+      .wp-post-image {
+        // background-size: cover;
+      }
+      .size-thumbnail {
+      }
+      .size-medium {
+      }
+      .size-large {
+      }
+    }
+    a {
+      text-decoration: none;
+      display: block;
+      letter-spacing: 0.02rem;
+    }
+    .wp-block-latest-posts__post-author {
+      font-size: 1.2rem;
+      font-weight: $font-weight-light;
+      display: inline-block;
+      margin-right: 0.5rem;
+      // note – designed with no pipe on author. Looks best with author and date turned on, or both off.
+      // &:before {
+      //   content: "|";
+      //   color: $utorange;
+      //   margin: 0 0.5rem 0 0;
+      // }
+    }
+    time {
+      display: inline-block;
+      font-weight: $font-weight-light;
+      &:before {
+        content: "|";
+        color: $utorange;
+        margin: 0 0.5rem 0 0;
+      }
+    }
+    .wp-block-latest-posts__post-excerpt:not(:empty) {
+      margin-top: 1.5rem;
+    }
+  }
+}
+//  ------ ------ ----- Begin Grid Layout ------ ------ -----
+.wp-block-latest-posts__list.is-grid {
+  padding-left: 0;
+  display: flex;
+  gap: 3rem 0;
+  flex-flow: row wrap;
+  position: relative;
+  justify-content: flex-end;
+
+  li {
+    // border-right: 2px solid orange;
+    // margin: 0 1.25em 1.25em 0;
+    // width: 100%;
+    padding: 4rem;
+    flex-basis: calc(100% - 0.625em);
+    flex-grow: 1;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .wp-block-latest-posts__list.columns-2 {
+    li {
+      flex-basis: calc(40% - 0.625em);
+      &:nth-child(2n) {
+        margin-right: 0;
+        position: relative;
+        &:before {
+          content: "";
+          border: 1px solid $utorange;
+          position: absolute;
+          top: 15%;
+          height: 70%;
+          left: 0;
+        }
+      }
+    }
+  } // end .columns-2
+  .wp-block-latest-posts__list.columns-3 {
+    li {
+      flex-basis: calc(30% - 0.625em);
+      &:nth-child(3n - 1),
+      &:nth-child(3n + 0) {
+        margin-right: 0;
+        position: relative;
+        &:before {
+        }
+      }
+    }
+  } // end .columns-3
+  .wp-block-latest-posts__list.columns-4 {
+    li {
+      flex-basis: calc(24% - 0.625em);
+      &:nth-child(4n + 2),
+      &:nth-child(4n + 3),
+      &:nth-child(4n + 4) {
+        margin-right: 0;
+        position: relative;
+        &:before {
+          @extend .wp-block-latest-posts__list.columns-2 li &:before;
+        }
+      }
+    }
+  } // end .columns-4
+}
+
+@media (min-width: 900px) {
+  .wp-block-latest-posts__list.columns-5 {
+    li {
+      flex-basis: calc(17% - 0.625em);
+      flex-grow: 1;
+      margin-bottom: 1rem;
+      &:nth-child(5n + 2),
+      &:nth-child(5n + 3),
+      &:nth-child(5n + 4),
+      &:nth-child(5n + 5) {
+        margin-right: 0;
+        position: relative;
+        &:before {
+          @extend .wp-block-latest-posts__list.columns-2 li &:before;
+        }
+      }
+    }
+  } // end .columns-5
+  .wp-block-latest-posts__list.columns-6 {
+    li {
+      flex-basis: calc(19% - 0.625em);
+      flex-grow: 1;
+      margin-bottom: 1rem;
+      &:nth-child(6n + 2),
+      &:nth-child(6n + 3),
+      &:nth-child(6n + 4),
+      &:nth-child(6n + 5),
+      &:nth-child(6n + 6) {
+        margin-right: 0;
+        position: relative;
+        &:before {
+          @extend .wp-block-latest-posts__list.columns-2 li &:before;
+        }
+      }
+    }
+  } // end .columns-6
+}
