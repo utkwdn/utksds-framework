@@ -152,7 +152,103 @@ li .wp-block-latest-posts__list.is-grid {
     justify-content: flex-start;
     li {
       padding: 4rem;
+      flex: 1 0 33%;
+      margin-bottom: 1rem;
+
+      &:before {
+        content: "";
+        border: 1px solid $utorange;
+        position: absolute;
+        top: 15%;
+        height: 70%;
+        left: 0;
+      }
+      &:nth-child(3n + 1) {
+        margin-right: 0;
+        &:before {
+          border: none;
+        }
+      }
+    }
+  } // end .columns-4
+  .wp-block-latest-posts__list.is-grid.columns-5 {
+    padding-left: 0;
+    display: flex;
+    gap: 3rem 0;
+    flex-flow: row wrap;
+    position: relative;
+    justify-content: flex-start;
+    li {
+      padding: 4rem;
+      flex: 1 0 33%;
+      margin-bottom: 1rem;
+      &:before {
+        content: "";
+        border: 1px solid $utorange;
+        position: absolute;
+        top: 15%;
+        height: 70%;
+        left: 0;
+      }
+
+      &:nth-child(3n + 1) {
+        margin-right: 0;
+        &:before {
+          border: none;
+        }
+      }
+    }
+  } // end .columns-5
+}
+
+@media (min-width: 1009px) {
+  .wp-block-latest-posts__list.is-grid.columns-4 {
+    li {
       flex: 1 0 24%;
+      &:nth-child(3n + 1) {
+        margin-right: 0;
+        &:before {
+          border: 1px solid $utorange;
+        }
+      }
+      &:nth-child(4n + 1) {
+        margin-right: 0;
+        &:before {
+          border: none;
+          border: none;
+        }
+      }
+    }
+  } // end .columns-4 at 1009
+  .wp-block-latest-posts__list.is-grid.columns-5 {
+    li {
+      flex: 1 0 24%; //4 rows at smaller sizes
+
+      &:nth-child(3n + 1) {
+        margin-right: 0;
+        &:before {
+          border: 1px solid $utorange;
+        }
+      }
+
+      &:nth-child(4n + 1) {
+        margin-right: 0;
+        &:before {
+          border: none;
+        }
+      }
+    }
+  } // end .columns-5
+  .wp-block-latest-posts__list.is-grid.columns-6 {
+    padding-left: 0;
+    display: flex;
+    gap: 3rem 0;
+    flex-flow: row wrap;
+    position: relative;
+    justify-content: flex-start;
+    li {
+      padding: 4rem;
+      flex: 1 0 24%; //4 rows at smaller sizes
       margin-bottom: 1rem;
 
       &:before {
@@ -170,57 +266,60 @@ li .wp-block-latest-posts__list.is-grid {
         }
       }
     }
-  } // end .columns-4
-}
+  } // end .columns-6
+} // end @media 1009px
 
-@media (min-width: 900px) {
+@media (min-width: 1249px) {
   .wp-block-latest-posts__list.is-grid.columns-5 {
-    padding-left: 0;
-    display: flex;
-    gap: 3rem 0;
-    flex-flow: row wrap;
-    position: relative;
-    justify-content: flex-start;
     li {
-      padding: 4rem;
-      flex: 1 0 17%;
-      margin-bottom: 1rem;
-      &:before {
-        content: "";
-        border: 1px solid $utorange;
-        position: absolute;
-        top: 15%;
-        height: 70%;
-        left: 0;
+      flex: 1 0 17%; // 5 columns
+      &:nth-child(4n + 1) {
+        &:before {
+          border: 1px solid $utorange;
+        }
       }
 
       &:nth-child(5n + 1) {
-        margin-right: 0;
         &:before {
           border: none;
         }
       }
     }
   } // end .columns-5
-  .wp-block-latest-posts__list.columns-6 {
-    padding-left: 0;
-    display: flex;
-    gap: 3rem 0;
-    flex-flow: row wrap;
-    position: relative;
-    justify-content: flex-start;
+  .wp-block-latest-posts__list.is-grid.columns-6 {
     li {
       padding: 4rem;
-      flex: 0 0 calc((100% - 20rem) / 6);
-      margin-bottom: 1rem;
+      flex: 1 0 17%; // 5 columns
+      &:nth-child(4n + 1) {
+        margin-right: 0;
+        &:before {
+          border: 1px solid $utorange;
+        }
+      }
+      &:nth-child(5n + 1) {
+        &:before {
+          border: none;
+        }
+      }
+    }
+  } // end .columns-6
+}
 
-      &:before {
-        content: "";
-        border: 1px solid $utorange;
-        position: absolute;
-        top: 15%;
-        height: 70%;
-        left: 0;
+@media (min-width: 1496px) {
+  .wp-block-latest-posts__list.is-grid.columns-6 {
+    li {
+      padding: 4rem;
+      flex: 1 0 12%;
+      &:nth-child(4n + 1) {
+        &:before {
+          border: 1px solid $utorange;
+        }
+      }
+
+      &:nth-child(5n + 1) {
+        &:before {
+          border: 1px solid $utorange;
+        }
       }
       &:nth-child(6n + 1) {
         margin-right: 0;
