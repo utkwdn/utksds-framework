@@ -3,15 +3,11 @@
   li {
     border-bottom: 2px solid $utorange;
     padding-left: 0;
-    padding: 1rem 1rem 0.5rem 1rem;
+    padding: 1.4rem 1rem 0.5rem 1rem;
     list-style-type: none;
     position: relative;
     .wp-block-latest-posts__featured-image {
       display: block;
-      // width: 70%;
-      // max-width: 500px;
-      // max-height: 200px;
-      // overflow: hidden;
       margin-bottom: 1rem;
       &:before {
         content: " ";
@@ -39,11 +35,6 @@
       display: inline-block;
       margin-right: 0.5rem;
       // note – designed with no pipe on author. Looks best with author and date turned on, or both off.
-      // &:before {
-      //   content: "|";
-      //   color: $utorange;
-      //   margin: 0 0.5rem 0 0;
-      // }
     }
     time {
       display: inline-block;
@@ -70,10 +61,7 @@ li .wp-block-latest-posts__list.is-grid {
   justify-content: flex-start;
 
   li {
-    // border-right: 2px solid orange;
-    // margin: 0 1.25em 1.25em 0;
-    // width: 100%;
-    padding: 4rem;
+    padding: 2rem 4rem;
     width: calc(100% - 0.625em);
     flex: 1 1 auto;
     margin-bottom: 1rem;
@@ -97,7 +85,7 @@ li .wp-block-latest-posts__list.is-grid {
     position: relative;
     justify-content: flex-start;
     li {
-      padding: 4rem;
+      padding: 2rem 4rem;
       flex: 1 0 50%;
       margin-bottom: 1rem;
       &:before {
@@ -124,7 +112,7 @@ li .wp-block-latest-posts__list.is-grid {
     position: relative;
     justify-content: flex-start;
     li {
-      padding: 4rem;
+      padding: 2rem 4rem;
       flex: 1 0 33%;
       margin-bottom: 1rem;
       &:before {
@@ -151,7 +139,7 @@ li .wp-block-latest-posts__list.is-grid {
     position: relative;
     justify-content: flex-start;
     li {
-      padding: 4rem;
+      padding: 2rem 4rem;
       flex: 1 0 33%;
       margin-bottom: 1rem;
 
@@ -179,7 +167,7 @@ li .wp-block-latest-posts__list.is-grid {
     position: relative;
     justify-content: flex-start;
     li {
-      padding: 4rem;
+      padding: 2rem 4rem;
       flex: 1 0 33%;
       margin-bottom: 1rem;
       &:before {
@@ -223,7 +211,6 @@ li .wp-block-latest-posts__list.is-grid {
   .wp-block-latest-posts__list.is-grid.columns-5 {
     li {
       flex: 1 0 24%; //4 rows at smaller sizes
-
       &:nth-child(3n + 1) {
         margin-right: 0;
         &:before {
@@ -247,7 +234,7 @@ li .wp-block-latest-posts__list.is-grid {
     position: relative;
     justify-content: flex-start;
     li {
-      padding: 4rem;
+      padding: 2rem 4rem;
       flex: 1 0 24%; //4 rows at smaller sizes
       margin-bottom: 1rem;
 
@@ -288,7 +275,6 @@ li .wp-block-latest-posts__list.is-grid {
   } // end .columns-5
   .wp-block-latest-posts__list.is-grid.columns-6 {
     li {
-      padding: 4rem;
       flex: 1 0 17%; // 5 columns
       &:nth-child(4n + 1) {
         margin-right: 0;
@@ -308,7 +294,6 @@ li .wp-block-latest-posts__list.is-grid {
 @media (min-width: 1496px) {
   .wp-block-latest-posts__list.is-grid.columns-6 {
     li {
-      padding: 4rem;
       flex: 1 0 12%;
       &:nth-child(4n + 1) {
         &:before {
