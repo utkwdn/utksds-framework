@@ -9,19 +9,18 @@
     .wp-block-latest-posts__featured-image {
       display: block;
       margin-bottom: 1rem;
-      &:before {
-        content: " ";
-        border-left: 3px solid green;
-        display: block;
-      }
-      .wp-post-image {
-        // background-size: cover;
-      }
+      margin-right: 2rem;
+
+      overflow: hidden;
+
       .size-thumbnail {
+        position: relative;
       }
       .size-medium {
+        position: relative;
       }
       .size-large {
+        position: relative;
       }
     }
     a {
@@ -47,12 +46,14 @@
     }
     .wp-block-latest-posts__post-excerpt:not(:empty) {
       margin-top: 1.5rem;
+      display: block;
+      position: relative;
     }
   }
 }
 //  ------ ------ ----- Begin Grid Layout ------ ------ -----
 
-li .wp-block-latest-posts__list.is-grid {
+.wp-block-latest-posts__list.is-grid {
   padding-left: 0;
   display: flex;
   gap: 3rem 0;
@@ -61,17 +62,17 @@ li .wp-block-latest-posts__list.is-grid {
   justify-content: flex-start;
 
   li {
-    padding: 2rem 4rem;
-    width: calc(100% - 0.625em);
-    flex: 1 1 auto;
+    flex: 1 0 calc(100% - 0.625em);
     margin-bottom: 1rem;
-    &:before {
-      content: "";
-      border: 1px solid $utorange;
-      position: absolute;
-      top: 15%;
-      height: 70%;
-      left: 0;
+
+    .wp-block-latest-posts__featured-image {
+      position: relative;
+      width: 100%;
+      max-height: auto;
+      display: block;
+      margin-bottom: 1rem;
+      // margin-right: 2rem;
+      overflow: hidden;
     }
   }
 }
@@ -80,12 +81,12 @@ li .wp-block-latest-posts__list.is-grid {
   .wp-block-latest-posts__list.is-grid.columns-2 {
     padding-left: 0;
     display: flex;
-    gap: 3rem 0;
+    gap: 1rem 0;
     flex-flow: row wrap;
     position: relative;
     justify-content: flex-start;
     li {
-      padding: 2rem 4rem;
+      padding: 1.5rem 4rem;
       flex: 1 0 50%;
       margin-bottom: 1rem;
       &:before {
@@ -112,8 +113,8 @@ li .wp-block-latest-posts__list.is-grid {
     position: relative;
     justify-content: flex-start;
     li {
-      padding: 2rem 4rem;
-      flex: 1 0 33%;
+      padding: 1.5rem 4rem;
+      flex: 1 0 50%;
       margin-bottom: 1rem;
       &:before {
         content: "";
@@ -123,7 +124,7 @@ li .wp-block-latest-posts__list.is-grid {
         height: 70%;
         left: 0;
       }
-      &:nth-child(3n + 1) {
+      &:nth-child(odd) {
         margin-right: 0;
         &:before {
           border: none;
@@ -139,8 +140,8 @@ li .wp-block-latest-posts__list.is-grid {
     position: relative;
     justify-content: flex-start;
     li {
-      padding: 2rem 4rem;
-      flex: 1 0 33%;
+      padding: 1.5rem 4rem;
+      flex: 1 0 50%;
       margin-bottom: 1rem;
 
       &:before {
@@ -150,6 +151,44 @@ li .wp-block-latest-posts__list.is-grid {
         top: 15%;
         height: 70%;
         left: 0;
+      }
+      &:nth-child(odd) {
+        margin-right: 0;
+        &:before {
+          border: none;
+        }
+      }
+    }
+  } // end .columns-4
+}
+@media (min-width: 825px) {
+  .wp-block-latest-posts__list.is-grid.columns-3 {
+    li {
+      padding: 2rem 4rem;
+      flex: 1 0 33%;
+      &:nth-child(2n - 1) {
+        margin-right: 0;
+        &:before {
+          border: 1px solid $utorange;
+        }
+      }
+      &:nth-child(3n + 1) {
+        margin-right: 0;
+        &:before {
+          border: none;
+        }
+      }
+    }
+  } // end .columns-3
+  .wp-block-latest-posts__list.is-grid.columns-4 {
+    li {
+      padding: 2rem 4rem;
+      flex: 1 0 33%;
+      &:nth-child(2n - 1) {
+        margin-right: 0;
+        &:before {
+          border: 1px solid $utorange;
+        }
       }
       &:nth-child(3n + 1) {
         margin-right: 0;
@@ -202,7 +241,6 @@ li .wp-block-latest-posts__list.is-grid {
       &:nth-child(4n + 1) {
         margin-right: 0;
         &:before {
-          border: none;
           border: none;
         }
       }
