@@ -1,13 +1,13 @@
-.framed  {
-//  justify-content: center;
- // display: flex;
-  
-	position: relative;
-	padding-left: 0;
-	// display: inline-block;
-	z-index: 4;
+.framed {
+  //  justify-content: center;
+  // display: flex;
+
+  position: relative;
+  padding-left: 0;
+  // display: inline-block;
+  z-index: 4;
   margin-bottom: 2rem;
-	&::before {
+  &::before {
     position: absolute;
     content: " ";
     width: 60%;
@@ -25,20 +25,18 @@
       bottom: -1.25rem;
       left: -1.25rem;
     }
-	}
-	&.right::after {
+  }
+  &.right::after {
     //border-right: 1.5rem solid #FF8200;
     //border-bottom: 1.5rem solid #FF8200;
     border-left: 0;
-    right:  -$container-padding-x;
+    right: -$container-padding-x;
     left: auto;
     @include media-breakpoint-up(md) {
-      right:  -1.25rem;
+      right: -1.25rem;
     }
-
-	}
-	&.gingham::after {
-		background-image: url("https://images.utk.edu/designsystem/v1/latest/assets/i/strip_gingham.gif");
-	}
-  
+  }
+  &.gingham::after {
+    background-image: url("https://images.utk.edu/designsystem/v1/latest/assets/i/strip_gingham.gif");
+  }
 }
