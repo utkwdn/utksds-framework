@@ -6,21 +6,38 @@
     padding: 1.4rem 1rem 0.5rem 1rem;
     list-style-type: none;
     position: relative;
+    display: block;
+    &:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
     .wp-block-latest-posts__featured-image {
       display: block;
       margin-bottom: 1rem;
-      margin-right: 2rem;
-
       overflow: hidden;
-
+      &.alignleft {
+        margin-right: 1.5rem;
+        float: left;
+      }
+      &.alignright {
+        margin-left: 1.5rem;
+        float: right;
+      }
       .size-thumbnail {
         position: relative;
+        max-width: 10%;
+        height: auto;
       }
       .size-medium {
         position: relative;
+        max-width: 45%;
+        height: auto;
       }
       .size-large {
         position: relative;
+        max-width: 80%;
+        height: auto;
       }
     }
     a {
@@ -51,6 +68,7 @@
     }
   }
 }
+
 //  ------ ------ ----- Begin Grid Layout ------ ------ -----
 
 .wp-block-latest-posts__list.is-grid {
@@ -67,15 +85,47 @@
 
     .wp-block-latest-posts__featured-image {
       position: relative;
-      width: 100%;
-      max-height: auto;
       display: block;
       margin-bottom: 1rem;
-      // margin-right: 2rem;
-      overflow: hidden;
+      margin-right: 0;
+      &.alignleft {
+        float: left;
+        clear: left;
+        width: auto;
+        margin-right: 1rem;
+        padding: 0;
+        position: relative;
+      }
+      &.alignright {
+        float: right;
+        clear: right;
+        width: auto;
+        margin-left: 1rem;
+        padding: 0;
+        overflow: hidden;
+      }
+      // thumb, med, and large are all applied to a nested img inside __featured-image. The width of these items is only a percentage of the parent.
+      .size-thumbnail {
+        position: relative;
+        max-width: 100%;
+      }
+      .size-medium {
+        position: relative;
+        max-width: 100%;
+      }
+      .size-large {
+        position: relative;
+        max-width: calc(100% - 1rem);
+        height: auto;
+      }
     }
   }
 }
+
+// the vertical lines are default applied to a before element on the li.
+// As browser width increases and column size shrinks, the columns are shifting and breakpoints have been manually created.
+// To keep vertical line not appearing in the first column. The border is explicitly added back to the nth-child elements that were removed in the previous breakpoint.
+// The border is then explicitly removed for the nth-child that now fall in the first column.
 
 @media (min-width: 768px) {
   .wp-block-latest-posts__list.is-grid.columns-2 {
