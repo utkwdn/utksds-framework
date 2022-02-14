@@ -1,8 +1,5 @@
-
-
 // scss-docs-start import-stack
 // Configuration
-
 
 @import "bootstrap/scss/functions";
 @import "scss/custom_variables";
@@ -50,7 +47,6 @@
 @import "bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 
-
 // UT Regions
 
 // @import "regions/contentarea";
@@ -65,7 +61,6 @@
 @import "scss/regions/universal-header";
 @import "scss/regions/universal-footer";
 
-
 // UT Components
 
 @import "scss/components/accordion_folds";
@@ -73,11 +68,11 @@
 @import "scss/components/cards";
 @import "scss/components/forms";
 @import "scss/components/gallery";
+@import "scss/components/latest_posts";
 @import "scss/components/profiles";
 @import "scss/components/promos";
 @import "scss/components/jumbotron";
 @import "scss/components/strip";
-
 
 // UT Styles
 @import "scss/styles/breadcrumbs";
