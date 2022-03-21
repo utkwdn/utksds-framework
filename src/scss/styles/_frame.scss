@@ -1,12 +1,55 @@
+.framed-figure {
+  // border: 8px solid blue;
+  position: relative;
+  display: inline-block;
+  &.alignleft {
+    margin-right: 2rem;
+  }
+  &.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  &.alignright {
+    margin-left: 2rem;
+    .framed {
+      // border: 6px solid purple;
+      &::before {
+        position: absolute;
+        content: " ";
+        width: 60%;
+        height: calc(100% - 2rem);
+        // bottom: -$container-padding-x;
+        left: 0 !important;
+        border-left: 0 !important;
+        right: -$container-padding-x;
+        margin-left: 42%;
+        border-right: 1.5rem solid $utorange;
+        border-bottom: 1.5rem solid $utorange;
+        z-index: -1;
+        @include media-breakpoint-up(md) {
+          bottom: -1.5rem;
+          right: -1.5rem;
+        }
+      }
+    }
+  }
+}
+
 .framed {
   //  justify-content: center;
   // display: flex;
-
+  // border: 6px solid red;
   position: relative;
   padding-left: 0;
   // display: inline-block;
   z-index: 4;
   margin-bottom: 2rem;
+  display: block;
+  width: auto;
   &::before {
     position: absolute;
     content: " ";
@@ -26,16 +69,17 @@
       left: -1.25rem;
     }
   }
-  &.right::after {
-    //border-right: 1.5rem solid #FF8200;
-    //border-bottom: 1.5rem solid #FF8200;
-    border-left: 0;
-    right: -$container-padding-x;
-    left: auto;
-    @include media-breakpoint-up(md) {
-      right: -1.25rem;
-    }
-  }
+  // Don't think this is affecting anything – this was here originally. Have commented out for now until know for sure it isn't needed.
+  // &.right::after {
+  //   //border-right: 1.5rem solid #FF8200;
+  //   //border-bottom: 1.5rem solid #FF8200;
+  //   border-left: 0;
+  //   right: -$container-padding-x;
+  //   left: auto;
+  //   @include media-breakpoint-up(md) {
+  //     right: -1.25rem;
+  //   }
+  // }
   &.gingham::after {
     background-image: url("https://images.utk.edu/designsystem/v1/latest/assets/i/strip_gingham.gif");
   }
