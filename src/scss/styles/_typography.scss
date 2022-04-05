@@ -24,3 +24,7 @@ h1, .h1 {
 .text-letterspaced {
   letter-spacing: 0.1em;
 }
+.text-white a {
+	color: $white;
+	text-decoration: underline;
+}
