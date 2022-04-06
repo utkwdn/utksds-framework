@@ -24,3 +24,17 @@ h1, .h1 {
 .text-letterspaced {
   letter-spacing: 0.1em;
 }
+
+// Default wordpress styles. Getting them in line with Bootstrap
+.has-small-font-size {
+	@extend .fs-6;
+}
+.has-medium-font-size {
+	@extend .fs-3;
+}
+.has-large-font-size {
+  @extend .fs-2;
+}
+.has-huge-font-size {
+ 	@extend .fs-1;
+}
