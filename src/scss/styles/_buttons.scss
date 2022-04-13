@@ -11,26 +11,80 @@
   }
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* modified the standard link to become link with accent as an after class */
+/* animation doesn't affect elements that come after */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .btn-link {
   font-size: 1.2rem;
-  line-height: 1.3rem !important;
+  line-height: 1.3rem;
   position: relative;
   display: inline-block;
   margin: 1.5rem 0;
   padding: 0 0 0.5rem 0;
-  box-shadow: inset 0px -1px #ff8200;
+  box-shadow: inset 0px -1px $utorange;
   font-style: italic;
   font-weight: 600;
   letter-spacing: 0.01rem;
   text-align: right;
   &:after {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='22' fill='%23ff8200' viewBox='0 0 25 26' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z' /%3E%3C/svg%3E");
+    /* <svg xmlns="https://www.w3.org/2000/svg" width="30" height="22" fill="#ff8200" viewBox="0 0 25 26"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path></svg> */
     margin-left: 0.5rem;
-    display: inline-block !important;
+    display: inline-block;
     position: absolute;
+    transition: all 0.2s ease-out;
   }
   &:hover {
     text-decoration: none;
-    box-shadow: inset 0px -1px #1a73c5;
+    box-shadow: inset 0px -1px $utlinkriver;
+  }
+  &:hover:after {
+    margin-left: 0.7rem;
   }
 }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Designed for span span */
+/* Animation causes elements after to shift to right */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+// .btn-link {
+//   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+//     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+//   :first-child {
+//     font-size: 1.2rem;
+//     line-height: 1.3rem;
+//     position: relative;
+//     display: inline-block;
+//     margin: 1.5rem 0;
+//     padding: 0 0 0.5rem 0;
+//     box-shadow: inset 0px -1px $utorange;
+//     font-style: italic;
+//     font-weight: 600;
+//     letter-spacing: 0.01rem;
+//     text-align: right;
+//     transition: all 0.4s;
+//     // &:hover {
+//     //   box-shadow: inset 0px -1px $utlinkriver;
+//     // }
+//   }
+//   :last-child {
+//     box-shadow: none;
+//     margin-left: 0.5rem;
+//     text-decoration: none;
+//     transition: all 0.2s ease-out;
+//     // &:hover {
+//     //   text-decoration: none;
+//     // }
+//   }
+//   &:hover {
+//     text-decoration: none;
+//     :first-child {
+//       box-shadow: inset 0px -1px $utlinkriver;
+//     }
+//     :last-child {
+//       box-shadow: none;
+//       text-decoration: none;
+//       margin-left: 0.7rem;
+//     }
+//   }
+// }
