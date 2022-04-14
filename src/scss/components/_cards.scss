@@ -68,6 +68,7 @@
      Parent Group Block: group .card-oa-container
          Nested Group Block 01: group .card-oa
          Nested Group Block 02: group .card-oa */
+/* works best with odd number of cards */
 /* - - - - - - - - - - - - */
 
 .card-oa-container > div[class$="__inner-container"] {
@@ -121,6 +122,6 @@
 }
 
 .card-oa h2.card-title a {
-  color: #1a73c5;
+  color: $utlinkriver;
   text-decoration: none;
 }
