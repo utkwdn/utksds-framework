@@ -1,16 +1,12 @@
-
-
-
-
 .card.overlay {
   &::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0%;
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0%;
   }
   &.overlay-0::before {
     opacity: 0%;
@@ -58,11 +54,73 @@
   &.bg-dark::before {
     background-color: $dark;
   }
-
 }
 
 // WP Compatibility
 
-.wp-block-utksds-card  p {
+.wp-block-utksds-card p {
   @extend .card-text;
+}
+
+/* - - - - - - - - - - - - */
+/* Orange Accent (oa) Flex Cards */
+/*These cards are designed to be added inside a nested group block
+     Parent Group Block: group .card-oa-container
+         Nested Group Block 01: group .card-oa
+         Nested Group Block 02: group .card-oa */
+/* - - - - - - - - - - - - */
+
+.card-oa-container > div[class$="__inner-container"] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.card-oa-container .card-oa-square {
+  width: 1rem;
+  height: 1rem;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: relative;
+  background-color: $utorange !important;
+  left: -0.75rem;
+  top: -2.5rem;
+  top: -3rem;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.card-oa {
+  flex: 1 1 30%;
+  background-color: #f5f5f5;
+  border: 1px solid #f6f6f6;
+  height: auto;
+}
+
+.card-oa .card {
+  flex: 1 1 100%;
+  flex-direction: column;
+  justify-content: start;
+  border: none;
+}
+
+.card-oa .card-body {
+  padding: 1rem 2rem 3rem 2rem;
+}
+
+.card-oa h2.card-title {
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.95rem;
+}
+
+.card-oa h2.card-title a {
+  color: #1a73c5;
+  text-decoration: none;
 }
