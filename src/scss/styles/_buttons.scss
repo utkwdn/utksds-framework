@@ -15,13 +15,14 @@
 /* modified the standard link to become link with accent as an after class */
 /* animation doesn't affect elements that come after */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
 .btn-link {
   font-size: 1.2rem;
   line-height: 1.3rem;
   position: relative;
   display: inline-block;
   margin: 1.5rem 0;
-  padding: 0 0 0.5rem 0;
+  padding: 0 0.5rem 0.5rem 0;
   box-shadow: inset 0px -1px $utorange;
   font-style: italic;
   font-weight: 600;
@@ -42,7 +43,18 @@
   &:hover:after {
     margin-left: 0.7rem;
   }
+  .bi {
+    /* turning off any chosen icons */
+    display: none;
+  }
 }
+.wp-block-utksds-button {
+  /* adding space after link for multiple in-line */
+  display: inline-block;
+  padding-right: 1.7rem;
+  margin-right: ($spacer * 3);
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Designed for span span */
 /* Animation causes elements after to shift to right */
