@@ -80,48 +80,78 @@
   align-items: stretch;
 }
 
-.card-oa-container .card-oa-square {
-  width: 1rem;
-  height: 1rem;
-  width: 2rem;
-  height: 2rem;
-  display: block;
-  position: relative;
-  background-color: $utorange !important;
-  left: -0.75rem;
-  top: -2.5rem;
-  top: -3rem;
-  margin: 0;
-  padding: 0;
-  z-index: 10;
-}
+// .card-oa-container .card-oa-square {
+//   width: 2rem;
+//   height: 2rem;
+//   display: block;
+//   position: relative;
+//   background-color: $utorange !important;
+//   left: -0.75rem;
+//   top: -2.5rem;
+//   top: -3rem;
+//   margin: 0;
+//   padding: 0;
+//   z-index: 10;
+// }
 
 .card-oa {
   flex: 1 1 30%;
   background-color: #f5f5f5;
   border: 1px solid #f6f6f6;
   height: auto;
+  &.card-oa-square {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    position: relative;
+    background-color: $utorange !important;
+    left: -0.75rem;
+    top: -2.5rem;
+    top: -3rem;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+  }
+  .card {
+    flex: 1 1 100%;
+    flex-direction: column;
+    justify-content: start;
+    border: none;
+  }
+  .card-body {
+    padding: 1rem 2rem 3rem 2rem;
+  }
+  h2.card-title {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.95rem;
+  }
+  h2.card-title a {
+    color: $utlinkriver;
+    text-decoration: none;
+  }
 }
 
-.card-oa .card {
-  flex: 1 1 100%;
-  flex-direction: column;
-  justify-content: start;
-  border: none;
-}
+// .card-oa .card {
+//   flex: 1 1 100%;
+//   flex-direction: column;
+//   justify-content: start;
+//   border: none;
+// }
 
-.card-oa .card-body {
-  padding: 1rem 2rem 3rem 2rem;
-}
+// .card-oa .card-body {
+//   padding: 1rem 2rem 3rem 2rem;
+// }
 
-.card-oa h2.card-title {
-  font-weight: 400;
-  margin-bottom: 2rem;
-  font-size: 1.8rem;
-  line-height: 1.95rem;
-}
-
-.card-oa h2.card-title a {
-  color: $utlinkriver;
-  text-decoration: none;
-}
+// .card-oa h2.card-title {
+//   font-weight: 400;
+//   margin-bottom: 2rem;
+//   font-size: 1.8rem;
+//   line-height: 1.95rem;
+// }
+//
+// .card-oa h2.card-title a {
+//   color: $utlinkriver;
+//   text-decoration: none;
+// }
