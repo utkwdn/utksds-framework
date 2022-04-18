@@ -106,25 +106,6 @@
     }
   }
 
-  // .card-oa-square {
-  //   width: 2rem;
-  //   height: 2rem;
-  //   display: block;
-  //   position: relative;
-  //   background-color: $utorange !important;
-  //   left: -0.75rem;
-  //   top: -2.5rem;
-  //   top: -3rem;
-  //   margin: 0;
-  //   padding: 0;
-  //   z-index: 10;
-  // }
-  // .card {
-  //   flex: 1 1 100%;
-  //   flex-direction: column;
-  //   justify-content: start;
-  //   border: none;
-  // }
   .card-body {
     padding: 2rem 2rem 3rem 2rem;
     flex-grow: 1;
@@ -132,8 +113,6 @@
       content: "";
       width: 2rem;
       height: 2rem;
-      width: 0.07%;
-      height: 0.07%;
       display: block;
       position: relative;
       background-color: $utorange;
