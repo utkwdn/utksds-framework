@@ -76,7 +76,7 @@
     margin: 0 0; // allows image to snug up to card-body for oa-square placement
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
     }
   }
   .card-body {
@@ -147,7 +147,7 @@
     margin: 0 0; // allows image to snug up to card-body for oa-square placement
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
     }
   }
   .card-body {
