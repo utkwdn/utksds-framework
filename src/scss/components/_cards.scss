@@ -62,6 +62,50 @@
   @extend .card-text;
 }
 
+.card-group > div[class$="__inner-container"] {
+  @extend .card-group;
+}
+
+.card {
+  // border: 1px solid $utgray2;
+  box-shadow: 0px 1px 3px 0px $utgray2;
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+  //   rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: auto; // set width of card to fill column width
+  .card-img-top {
+    margin: 0 0; // allows image to snug up to card-body for oa-square placement
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .card-body {
+    padding: 2rem 2rem 3rem 2rem;
+    h2.card-title {
+      font-weight: 400;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      line-height: 1.95rem;
+    }
+    h2.card-title a {
+      color: $utlinkriver;
+      text-decoration: none;
+      &:hover {
+        color: $btn-link-hover-color;
+      }
+    }
+    p {
+      margin-bottom: 1.5rem;
+      a {
+        text-decoration: none;
+        &:hover {
+          color: $btn-link-hover-color;
+        }
+      }
+    }
+  }
+}
+
 /* - - - - - - - - - - - - */
 /* Orange Accent (oa) Flex Cards */
 /* Cards are designed to be added inside a group block
@@ -89,11 +133,15 @@
   @media (min-width: 900px) {
     flex: 1 1 30%;
   }
-  border: 1px solid $utgray1;
+  // border: 1px solid $utgray1;
+  // border: 1px solid $utgray2;
+  box-shadow: 0px 1px 3px 0px $utgray2;
+  // box-shadow: $utorange 5px 5px;
   height: auto;
   display: flex;
   flex-direction: column;
-
+  width: auto; // set width of card to fill column width
+  word-wrap: break-word;
   .card-img-top {
     // border: 1px solid pink;
     margin: 0 0; // allows image to snug up to card-body for oa-square placement
@@ -102,7 +150,6 @@
       height: 100%;
     }
   }
-
   .card-body {
     padding: 2rem 2rem 3rem 2rem;
     flex-grow: 1;
@@ -123,26 +170,33 @@
       padding: 0;
       z-index: 10;
     }
-  }
-  h2.card-title {
-    font-weight: 400;
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
-    line-height: 1.95rem;
-  }
-  h2.card-title a {
-    color: $utlinkriver;
-    text-decoration: none;
+    h2.card-title {
+      font-weight: 400;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      line-height: 1.95rem;
+    }
+    h2.card-title a {
+      color: $utlinkriver;
+      text-decoration: none;
+      &:hover {
+        color: $btn-link-hover-color;
+      }
+    }
+    p {
+      margin-bottom: 1.5rem;
+      a {
+        text-decoration: none;
+        &:hover {
+          color: $btn-link-hover-color;
+        }
+      }
+    }
   }
 } // end card-oa
 
 .wp-block-utksds-columns {
   &.card-oa-container {
     position: relative;
-  }
-
-  .card-oa {
-    // set width of card to fill column width
-    width: auto;
   }
 }
