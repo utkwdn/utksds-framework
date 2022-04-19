@@ -11,14 +11,35 @@
   }
 }
 
+.btn-group > div[class$="__inner-container"] {
+  @extend .btn-group;
+  // allow bootstrap to affect flex children properly
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* modified the standard link to become link with accent as an after class */
-/* animation doesn't affect elements that come after */
+/* modified the standard link to become link with svg > accent. Added as :after class */
+/* turns off ability to choose other icons */
+/* animation on :after > doesn't affect alignmnet of elements that come after */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.btn-link-container > div[class$="__inner-container"] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem 3rem;
+
+  @media (min-width: 900px) {
+    justify-content: flex-start;
+  }
+  .wp-block-utksds-button {
+    margin-right: 0;
+    //removed right margin from button when nested in flex group with gap
+  }
+}
 
 .btn-link {
-  font-size: 1.2rem;
-  line-height: 1.3rem;
+  // font-size: 1.2rem;
+  /* default button size is $font-size-base: 1.25 So removing override for now since it is close, allows btn-lg and btn-sm to take affect */
+  line-height: 1.3rem; // keeps > in correct alignment
   position: relative;
   display: inline-block;
   margin: 1.5rem 0;
