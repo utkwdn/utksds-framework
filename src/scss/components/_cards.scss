@@ -110,7 +110,7 @@
 /* Orange Accent (oa) Flex Cards */
 /* Cards are designed to be added inside a group block
      Parent Group Block: .card-oa-container
-      Card Block: .card-oa
+      Card Block: .card-oa-square
     Works best with odd number of cards
 /* - - - - - - - - - - - - */
 
@@ -124,7 +124,7 @@
   margin: 2rem 0;
 }
 
-.card-oa {
+.card-oa-square {
   /* styling used for both group and column based cards with orange accent */
   flex: 1 1 100%;
   @media (min-width: 600px) {
