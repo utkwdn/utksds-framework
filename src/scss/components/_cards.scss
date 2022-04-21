@@ -66,12 +66,18 @@
   @extend .card-group;
 }
 
+.card-deck > div[class$="__inner-container"] {
+  @extend .card-deck;
+  /* not sure default bootstrap for card-deck is working */
+}
+.card-group div[class$="__inner-container"] div.card {
+  // box-shadow: 0px 1px 3px 0px red !important;
+  // background-color: red !important;
+}
 .card {
-  // border: 1px solid $utgray2;
-  box-shadow: 0px 1px 3px 0px $utgray2;
-  // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-  //   rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* base card overides */
   width: auto; // set width of card to fill column width
+  word-wrap: break-word;
   .card-img-top {
     margin: 0 0; // allows image to snug up to card-body for oa-square placement
     img {
@@ -80,10 +86,9 @@
     }
   }
   .card-body {
-    padding: 2rem 2rem 3rem 2rem;
+    padding-bottom: 3rem !important; //bootstrap variables only allows top and bottom to be the same. Want more space on bottom.
     h2.card-title {
-      font-weight: 400;
-      margin-bottom: 2rem;
+      font-weight: $font-weight-normal;
       font-size: 1.8rem;
       line-height: 1.95rem;
     }
@@ -94,6 +99,7 @@
         color: $btn-link-hover-color;
       }
     }
+
     p {
       margin-bottom: 1.5rem;
       a {
@@ -126,6 +132,9 @@
 
 .card-oa-square {
   /* styling used for both group and column based cards with orange accent */
+  height: auto;
+  display: flex;
+  flex-direction: column;
   flex: 1 1 100%;
   @media (min-width: 600px) {
     flex: 1 1 40%;
@@ -133,25 +142,7 @@
   @media (min-width: 900px) {
     flex: 1 1 30%;
   }
-  // border: 1px solid $utgray1;
-  // border: 1px solid $utgray2;
-  box-shadow: 0px 1px 3px 0px $utgray2;
-  // box-shadow: $utorange 5px 5px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  width: auto; // set width of card to fill column width
-  word-wrap: break-word;
-  .card-img-top {
-    // border: 1px solid pink;
-    margin: 0 0; // allows image to snug up to card-body for oa-square placement
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
   .card-body {
-    padding: 2rem 2rem 3rem 2rem;
     flex-grow: 1;
     &:before {
       content: "";
@@ -170,30 +161,8 @@
       padding: 0;
       z-index: 10;
     }
-    h2.card-title {
-      font-weight: 400;
-      margin-bottom: 2rem;
-      font-size: 1.8rem;
-      line-height: 1.95rem;
-    }
-    h2.card-title a {
-      color: $utlinkriver;
-      text-decoration: none;
-      &:hover {
-        color: $btn-link-hover-color;
-      }
-    }
-    p {
-      margin-bottom: 1.5rem;
-      a {
-        text-decoration: none;
-        &:hover {
-          color: $btn-link-hover-color;
-        }
-      }
-    }
   }
-} // end card-oa
+} // end card-oa-square
 
 .wp-block-utksds-columns {
   &.card-oa-container {
