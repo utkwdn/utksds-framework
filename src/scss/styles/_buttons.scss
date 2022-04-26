@@ -69,6 +69,39 @@
     display: none;
   }
 }
+
+.text-white .btn-link {
+  // removed unerline for content strip when dark is selected
+  text-decoration: none;
+}
+.strip-orange {
+  .btn-link {
+    box-shadow: inset 0px -1px $utlinkriver;
+    &:after {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='22' fill='%231a73c5' viewBox='0 0 25 26' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z' /%3E%3C/svg%3E");
+    }
+  }
+}
+.strip-dark,
+.strip-smokey {
+  .btn-link {
+    &:hover {
+      text-decoration: none;
+      box-shadow: inset 0px -1px $utgray2;
+      color: $utgray2;
+    }
+  }
+}
+
+.strip-utlink {
+  .btn-link {
+    &:hover {
+      text-decoration: none;
+      box-shadow: inset 0px -1px $utgray2;
+      color: $utgray2;
+    }
+  }
+}
 .wp-block-utksds-button {
   /* adding space after link for multiple in-line */
   display: inline-block;
