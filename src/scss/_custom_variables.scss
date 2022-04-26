@@ -938,6 +938,28 @@ $zindex-popover:                    1070 !default;
 $zindex-tooltip:                    1080 !default;
 // scss-docs-end zindex-stack
 
+// Cards
+
+// scss-docs-start card-variables
+$card-spacer-y:                 $spacer * 2;
+$card-spacer-x:                 $spacer * 2;
+$card-title-spacer-y:           $spacer * 2;
+$card-border-color:             $utgray2;
+$card-box-shadow:               0px 1px 3px 0px $utgray2;
+
+$card-border-width:             $border-width !default;
+$card-border-radius:            $border-radius !default;
+$card-inner-border-radius:      subtract($card-border-radius, $card-border-width) !default;
+$card-cap-padding-y:            $card-spacer-y * 0.5 !default;
+$card-cap-padding-x:            $card-spacer-x !default;
+$card-cap-bg:                   rgba($black, 0.03) !default;
+$card-cap-color:                null !default;
+$card-height:                   null !default;
+$card-color:                    null !default;
+$card-bg:                       $white !default;
+$card-img-overlay-padding:      $spacer !default;
+// $card-group-margin: $grid-gutter-width * 0.5 !default;
+// scss-docs-end card-variables
 
 // Accordion
 
