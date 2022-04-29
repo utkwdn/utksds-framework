@@ -11,6 +11,7 @@
   }
 }
 
+
 .btn-group > div[class$="__inner-container"] {
   @extend .btn-group;
   // allow bootstrap to affect flex children properly
@@ -82,23 +83,76 @@
     }
   }
 }
+//
+// .strip-dark,
+// .strip-smokey,
+// .bg-dark,
+// .bg-smokey,
+// .strip-utlink {
+//   &.text-white {
+//     .btn-link {
+//       &:hover {
+//         text-decoration: none;
+//         box-shadow: inset 0px -1px $utgray2;
+//         color: $utgray2;
+//       }
+//     }
+//   }
+// }
 
-.strip-dark,
 .strip-smokey,
-.bg-dark,
-.bg-smokey,
+.strip-dark,
+.strip-utlink,
+// .bg-dark,
+// .bg-smokey,
 .strip-utlink {
   &.text-white {
-    .btn-link {
-      &:hover {
-        text-decoration: none;
-        box-shadow: inset 0px -1px $utgray2;
-        color: $utgray2;
+    .container {
+      > div[class$="utksds-button"] {
+        .btn {
+          color: white;
+          &.btn-link {
+            &:hover {
+              text-decoration: none;
+              box-shadow: inset 0px -1px $utgray2;
+              color: $utgray2;
+            }
+          }
+        }
+        .btn-gray2,
+        .btn-light,
+        .btn-summitt,
+        .btn-orange {
+          color: $color-contrast-dark ;
+          // color:#3B3B3B //darker grey passes contrast for orange;
+        }
       }
     }
   }
 }
 
+.strip-orange {
+  &.text-white {
+    .container {
+      > div[class$="utksds-button"] {
+        .btn {
+          color: white;
+          &.btn-link {
+            box-shadow: inset 0px -1px $utlinkriver;
+            &:after {
+              content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='22' fill='%231a73c5' viewBox='0 0 25 26' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z' /%3E%3C/svg%3E");
+            }
+            &:hover {
+              text-decoration: none;
+              box-shadow: inset 0px -1px $utgray2;
+              color: $utgray2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .wp-block-utksds-button {
   /* adding space after link for multiple in-line */
   display: inline-block;
@@ -126,10 +180,12 @@
 //     }
 //   }
 // }
+
+// this is working for cards and groups and columns
 .bg-dark,
 .bg-smokey,
 .bg-utlink {
-  // added to columns or groups with ..bg-utlink
+  // added to columns or groups with .bg-utlink
   .btn-link {
     color: white;
     &:hover {
@@ -139,6 +195,7 @@
     }
   }
 }
+
 .bg-orange {
   .btn-link {
     box-shadow: inset 0px -1px $utlinkriver;

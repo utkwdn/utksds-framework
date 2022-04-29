@@ -1,5 +1,6 @@
-h1, .h1 {
-	font-weight: $font-weight-bolder;
+h1,
+.h1 {
+  font-weight: $font-weight-bolder;
 }
 .has-drop-cap:first-letter {
   float: left;
@@ -10,35 +11,44 @@ h1, .h1 {
 }
 
 .list-roman {
-   list-style-type: upper-roman;
+  list-style-type: upper-roman;
 }
 .list-letters {
   list-style-type: lower-alpha;
 }
 
 .text-condensed {
-  font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 .text-letterspaced {
   letter-spacing: 0.1em;
 }
-.text-white a {
-	color: $white;
-	text-decoration: underline;
+.text-white > a {
+  color: $white;
+  text-decoration: underline;
 }
+// .text-summitt > a {
+// 	color:$utsummitt;
+// 	text-decoration: underline;
+// }
+// .text-smokey > a {
+// 	color:$utsmokey;
+// 	text-decoration:underline;
+// }
 
 // Default wordpress styles. Getting them in line with Bootstrap
 .has-small-font-size {
-	@extend .fs-6;
+  @extend .fs-6;
 }
 .has-medium-font-size {
-	@extend .fs-3;
+  @extend .fs-3;
 }
 .has-large-font-size {
   @extend .fs-2;
 }
 .has-huge-font-size {
- 	@extend .fs-1;
+  @extend .fs-1;
 }

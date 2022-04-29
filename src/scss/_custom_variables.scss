@@ -144,7 +144,9 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
-
+// Customize the light and dark text colors for use in our color contrast function.
+$color-contrast-dark:      $utsmokeytext;
+$color-contrast-light:     $white !default;
 
 $variable-prefix:             bs- !default;
 
