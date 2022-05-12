@@ -201,3 +201,26 @@
 //   background-image: url("https://images.utk.edu/designsystem/v1/latest/assets/i/strip_gingham.gif");
 // }
 // }
+
+/* image-oa-inset */
+// Orange Accent : inset border
+
+.image-oa-inset img {
+	/* inset border inside of images */
+ outline: $border-width solid $utorange;
+ outline-offset: calc(-1 * ($spacer / 2));
+}
+
+/*
+// Potential future use cases with different border thicknesses
+.image-oa-inset-thin img {
+outline: $border-width solid $utorange;
+outline-offset: calc(-1 * ($spacer / 2));
+}
+}
+
+.image-oa-inset-thick img {
+ outline: calc( $border-width * 2.5) solid $utorange;
+ outline-offset: calc(-1 * ($spacer / 2));
+}
+*/
