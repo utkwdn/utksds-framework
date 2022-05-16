@@ -324,8 +324,9 @@ $font-size-sm: $font-size-base * 0.875 !default;
 $font-weight-lighter: lighter !default;
 $font-weight-light: 200 !default;
 $font-weight-normal: 400 !default;
-$font-weight-bold: 600 !default;
-$font-weight-bolder: 900 !default;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+$font-weight-ultra: 900;
 
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
@@ -335,11 +336,11 @@ $h2-font-size: $font-size-base * 3.2;
 $h3-font-size: $font-size-base * 2.24;
 $h4-font-size: $font-size-base * 1.6;
 $h5-font-size: $font-size-base * 1.248;
-$h6-font-size: $font-size-base 1;
+$h6-font-size: $font-size-base;
 
 $headings-margin-bottom: calc($spacer / 2) !default;
 $headings-font-family: null !default;
-$headings-font-weight: 800 !default;
+$headings-font-weight: 700;
 $headings-line-height: 1.1 !default;
 $headings-color: null !default;
 
@@ -362,7 +363,7 @@ $hr-border-color: rgba($utsmokey, 0.25) !default;
 
 // scss-docs-start type-variables
 $lead-font-size: $font-size-base * 1.25 !default;
-$lead-font-weight: 300 !default;
+$lead-font-weight: 700;
 
 $small-font-size: 0.875em !default;
 
