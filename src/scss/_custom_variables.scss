@@ -129,12 +129,19 @@ $theme-colors: map-merge(
     "globe": $utglobe,
     "valley": $utvalley,
     "switchgrass": $utswitchgrass,
-    "leconte": $utleconte,
+    "leconte":     $utleconte,
+    "white":       $white
+
   ),
   $theme-colors
 );
 
-$variable-prefix: bs- !default;
+// Customize the light and dark text colors for use in our color contrast function.
+$color-contrast-dark:      $utsmokeytext;
+$color-contrast-light:     $white !default;
+
+$variable-prefix:             bs- !default;
+
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval: 8% !default;
