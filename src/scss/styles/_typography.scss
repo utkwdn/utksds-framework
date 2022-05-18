@@ -95,3 +95,12 @@ h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 p.lead + p {
 margin-top: calc($spacer * 2);
 }
+
+h2.heading-oa-bar {
+  // adds a thick bar under h2 headings
+  border-bottom: 0.5rem solid $utorange;
+  padding-bottom: 1rem;
+  width: auto;
+  position: relative;
+  width: fit-content;
+}
