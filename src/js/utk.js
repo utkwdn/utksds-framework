@@ -268,23 +268,44 @@ function executeQuery(evt) {
   	return false;
 }
 
-document.getElementById("cse-searchbox-form").addEventListener("submit", executeQuery);
+document.getElementById('cse-searchbox-form').addEventListener('submit', executeQuery);
 
 function eventSearch(evt){
 	evt.preventDefault();
-		var input = document.getElementById("q-events");
-		window.location.href = "https://calendar.utk.edu/search/events?search=" + input.value;
+    var input = document.getElementById('q-events');
+	var q_events = input.value;
+	input.value = "";
+	document.getElementById('q-news').value = "";
+	document.getElementById('q').value = "";
+    window.location.href = 'https://calendar.utk.edu/search/events?search=' + q_events;
 }
 
-document.getElementById("events-searchbox-form").addEventListener("submit", eventSearch);
+document.getElementById('events-searchbox-form').addEventListener('submit', eventSearch);
 
 function newsSearch(evt){
 	evt.preventDefault();
-		var input = document.getElementById("q-news");
-		window.location.href = "https://news.utk.edu/?s=" + input.value;
+    var input = document.getElementById('q-news');
+	var q_news = input.value;
+	input.value = "";
+	document.getElementById('q-events').value = "";
+	document.getElementById('q').value = "";
+    window.location.href = 'https://news.utk.edu/?s=' + q_news;
 }
 
-document.getElementById("news-searchbox-form").addEventListener("submit", newsSearch);
+document.getElementById('news-searchbox-form').addEventListener('submit', newsSearch);
+
+
+	var search_box = document.getElementById('searchModal');
+		
+	search_box.addEventListener('focusout', e => {
+    	const leavingSearch = !search_box.contains(e.relatedTarget);
+		
+		if(leavingSearch){
+			document.getElementById('q').value = "";
+			document.getElementById('q-events').value = "";
+			document.getElementById('q-news').value = "";
+		}
+	});
 
 
 
