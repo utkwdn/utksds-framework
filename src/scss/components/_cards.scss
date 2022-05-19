@@ -91,6 +91,7 @@
       font-weight: $font-weight-normal;
       font-size: 1.8rem;
       line-height: 1.95rem;
+      margin-top:0; // override _typography 
     }
     h2.card-title a {
       color: $utlinkriver;
