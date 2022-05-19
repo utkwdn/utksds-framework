@@ -1,5 +1,6 @@
-h1, .h1 {
-	font-weight: $font-weight-bolder;
+h1,
+.h1 {
+  font-weight: $font-weight-bolder;
 }
 .has-drop-cap:first-letter {
   float: left;
@@ -10,17 +11,96 @@ h1, .h1 {
 }
 
 .list-roman {
-   list-style-type: upper-roman;
+  list-style-type: upper-roman;
 }
 .list-letters {
   list-style-type: lower-alpha;
 }
 
 .text-condensed {
-  font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 .text-letterspaced {
   letter-spacing: 0.1em;
+}
+.text-white > a {
+  color: $white;
+  text-decoration: underline;
+}
+// .text-summitt > a {
+// 	color:$utsummitt;
+// 	text-decoration: underline;
+// }
+// .text-smokey > a {
+// 	color:$utsmokey;
+// 	text-decoration:underline;
+// }
+
+// Default wordpress styles. Getting them in line with Bootstrap
+.has-small-font-size {
+  @extend .fs-6;
+}
+.has-medium-font-size {
+  @extend .fs-3;
+}
+.has-large-font-size {
+  @extend .fs-2;
+}
+.has-huge-font-size {
+  @extend .fs-1;
+}
+
+h1 {
+  margin-top: calc($spacer * 6);
+  margin-bottom: calc($spacer * 2);
+  font-weight:900; // think it needs to be heavier like this here
+
+}
+h2 {
+  margin-top: calc($spacer * 5);
+  margin-bottom: calc($spacer * 2.2);
+}
+
+h3 {
+  margin-top: calc($spacer * 4);
+  margin-bottom: calc($spacer * 1.7);
+}
+
+h4 {
+  margin-top: calc($spacer * 3.2);
+  margin-bottom: calc($spacer * 1.2);
+}
+
+h5 {
+  margin-top: calc($spacer * 3);
+  margin-bottom: calc($spacer * 1);
+}
+h6 {
+  margin-top: calc($spacer * 2.8);
+  margin-bottom: calc($spacer * 1);
+}
+
+h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
+  margin-top:0;
+}
+.entry-header h1 {
+  // playing with font size in grey bar
+  margin: 0 0 0 0;
+  font-size: $h2-font-size;
+  padding: 0;
+}
+p.lead + p {
+margin-top: calc($spacer * 2);
+}
+
+h2.heading-oa-bar {
+  // adds a thick bar under h2 headings
+  border-bottom: 0.5rem solid $utorange;
+  padding-bottom: 1rem;
+  width: auto;
+  position: relative;
+  width: fit-content;
 }
