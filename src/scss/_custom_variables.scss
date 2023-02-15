@@ -66,6 +66,7 @@ $uttextsmokey: $utsmokeytext;
 $utcoolsmokey: #313e48;
 $utcoolrock: #d9dfe3;
 $utlinkriver: #1a73c5;
+$utlinkhover: #114c81;
 
 //UT Branding Colors Modify
 $utlimestone-d: rgb(213, 211, 205);
@@ -123,25 +124,27 @@ $theme-colors: map-merge(
     "utlink": $utlinkriver,
     "dark": $dark,
     "light": $light,
-    "torch": $uttorchweb,
-    "sunsphere": $utsunsphere,
-    "fountain": $utfountain,
-    "globe": $utglobe,
-    "valley": $utvalley,
-    "switchgrass": $utswitchgrass,
-    "leconte":     $utleconte,
-    "white":       $white
-
+    // "torch": $uttorchweb,
+    // "sunsphere": $utsunsphere,
+    // "fountain": $utfountain,
+    // "globe": $utglobe,
+    // "valley": $utvalley,
+    // "switchgrass": $utswitchgrass,
+    // "leconte":     $utleconte,
+    "white": $white,
   ),
   $theme-colors
 );
+// extend wp colors
+.has-smokey-color {
+  color: $utsmokey;
+}
 
 // Customize the light and dark text colors for use in our color contrast function.
-$color-contrast-dark:      $utsmokeytext;
-$color-contrast-light:     $white !default;
+$color-contrast-dark: $utsmokeytext;
+$color-contrast-light: $white !default;
 
-$variable-prefix:             bs- !default;
-
+$variable-prefix: bs- !default;
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval: 8% !default;
@@ -257,7 +260,7 @@ $link-hover-decoration: underline !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;
 
-$list-group-color: nil;
+$list-group-color: $utlinkriver;
 $list-group-bg: transparent;
 $list-group-border-color: rgba($black, 0.125);
 $list-group-border-width: $border-width;
@@ -325,7 +328,8 @@ $font-family-code: var(--#{$variable-prefix}font-monospace) !default;
 $font-family-sans-serif: "Gotham A", "Gotham B", "Gotham SSm 4r", "Gotham SSm A",
   "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-size-base: 1.25rem; // Assumes the browser default, typically `16px`
-$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-lg: $font-size-base * 1.1 !default;
+$font-size-xlg: $font-size-base * 1.25;
 $font-size-sm: $font-size-base * 0.875 !default;
 
 $font-weight-lighter: lighter !default;
@@ -338,17 +342,50 @@ $font-weight-ultra: 900;
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
 
-$h1-font-size: $font-size-base * 5.2; // 6.6rem
-$h2-font-size: $font-size-base * 3.2; // 4rem
-$h3-font-size: $font-size-base * 2.24; // 2.8rem
-$h4-font-size: $font-size-base * 1.6; // 2rem
-$h5-font-size: $font-size-base * 1.248; // 1.56rem
-$h6-font-size: $font-size-base; // 1.25rem
+// MIN size calc based on 1.66 divisor of max multiplier (based on min size being 2.8rem) Scale is manipulated at h4, h5, h6 to make sure size is never smaller than 1rem.
+// VAL determined by 1.36 scale:  H1 VAL / 1.36 = H2 VAL (based on 11.5vw starting point)
+// MAX size determined by 1.36 scale divided by $font-size-base (base h1 is 4.653rem)
+
+$h1-font-size: clamp(
+  (calc($font-size-base * 2.24)),
+  11.5vw,
+  (calc($font-size-base * 3.7224))
+); //max size is 4.653rem min-size 2.8rem
+$h2-font-size: clamp(
+  (calc($font-size-base * 1.647)),
+  8.4558vw,
+  (calc($font-size-base * 2.7368))
+); // max size is 3.421rem
+$h3-font-size: clamp(
+  (calc($font-size-base * 1.211)),
+  6.2175vw,
+  (calc($font-size-base * 2.012))
+); // max size is 2.515rem
+$h4-font-size: clamp(
+  (calc($font-size-base * 1)),
+  4.572vw,
+  (calc($font-size-base * 1.48))
+); // max size is  1.85rem
+$h5-font-size: clamp(
+  (calc($font-size-base * 0.9)),
+  3.362vw,
+  (calc($font-size-base * 1.088))
+); // max size is  1.36rem
+$h6-font-size: clamp(
+  (calc($font-size-base * 0.8)),
+  2.661vw,
+  (calc($font-size-base * 0.8))
+); // max size is  1rem
+$p-font-size: clamp(
+  (calc($font-size-base * 0.9)),
+  3.362vw,
+  (calc($font-size-base))
+); // max size is  1rem
 
 $headings-margin-bottom: calc($spacer / 2) !default;
 $headings-font-family: null !default;
-$headings-font-weight: 700;
-$headings-line-height: .97;
+$headings-font-weight: $font-weight-bolder;
+$headings-line-height: 0.85;
 $headings-color: null !default;
 
 $display-font-sizes: (
@@ -361,7 +398,7 @@ $display-font-sizes: (
 ) !default;
 
 $display-font-weight: 900 !default;
-$display-line-height: 1 !default;
+$display-line-height: 0.9 !default;
 
 $lead-font-size: $font-size-base * 1.25 !default;
 $lead-font-weight: 200 !default;
@@ -369,8 +406,12 @@ $lead-font-weight: 200 !default;
 $hr-border-color: rgba($utsmokey, 0.25) !default;
 
 // scss-docs-start type-variables
-$lead-font-size: $font-size-base * 1.25 !default;
-$lead-font-weight: 700;
+$lead-font-size: clamp(
+  (calc($font-size-base * 1)),
+  4.572vw,
+  (calc($font-size-base * 1.48))
+); // max size is  1.85rem
+$lead-font-weight: $font-weight-light;
 
 $small-font-size: 0.875em !default;
 
@@ -381,7 +422,7 @@ $text-muted: $gray-600 !default;
 $initialism-font-size: $small-font-size !default;
 
 $blockquote-margin-y: $spacer !default;
-$blockquote-font-size: $font-size-base * 1.25 !default;
+$blockquote-font-size: calc($font-size-lg * 1.2);
 $blockquote-footer-color: $gray-600 !default;
 $blockquote-footer-font-size: $small-font-size !default;
 
@@ -415,6 +456,15 @@ $paragraph-margin-bottom: 1rem !default;
 //
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
+
+// Theme.json layout variables used in atlas
+// New variables to recreate ones generated from theme.json
+// Need to make sure if theme.json changes settings for layout or
+// if we change this width here – both places get updated!
+// var(--wp--style--global--content-size)
+// $global-layout-content: 1500px;
+// var(--wp--style--global--wide-size)
+// $gloabl-layout-wide: 80vw;
 
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (

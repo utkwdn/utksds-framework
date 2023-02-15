@@ -156,6 +156,73 @@
   }
 }
 
+.framedGray {
+  position: relative;
+  padding-left: 0;
+  z-index: 4;
+  margin-bottom: 2rem;
+  // display: inline-block;
+
+  width: auto;
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 60%;
+    height: calc(100% - 2rem);
+    bottom: -$container-padding-x;
+    left: -$container-padding-x;
+    // border-top: 0.6rem solid #FF8200;
+    //border-left: 1.5rem solid #FF8200;
+    //border-bottom: 1.5rem solid #FF8200;
+    //background: $utorange;
+    border-left: 1.25rem solid $utgray2;
+    border-bottom: 1.25rem solid $utgray2;
+    z-index: -1;
+    @include media-breakpoint-up(md) {
+      bottom: -1.25rem;
+      left: -1.25rem;
+    }
+  }
+}
+
+.framedGreyShadow {
+  filter: drop-shadow(1.25rem 1.25rem 0px $utgray2);
+  margin: 1rem;
+}
+
+.framedOrangeShadow {
+  filter: drop-shadow(1.25rem 1.25rem 0px $utorange);
+  @extend .hardware-excelerated;
+
+  margin: 1rem;
+  .wp-element-caption {
+    // filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.5)) !important;
+    // border: 2px solid blue;
+    filter: none !important;
+  }
+}
+
+.framedThin {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: auto;
+    border-right: 2px solid $utorange;
+
+    border-bottom: 2px solid $utorange;
+    z-index: 0;
+    width: 100%;
+
+    top: 3rem;
+    right: -1rem;
+    bottom: -2rem;
+    left: 2rem;
+    z-index: 1rem;
+  }
+}
+
 // .framed {
 //   //  justify-content: center;
 //   // display: flex;
@@ -206,9 +273,9 @@
 // Orange Accent : inset border
 
 .image-oa-inset img {
-	/* inset border inside of images */
- outline: $border-width solid $utorange;
- outline-offset: calc(-1 * ($spacer / 2));
+  /* inset border inside of images */
+  outline: $border-width solid $utorange;
+  outline-offset: calc(-1 * ($spacer / 2));
 }
 
 /*

@@ -14,4 +14,12 @@
     @extend .px-0;
   }
 }
-
+.sidebar-primary {
+  //   border: 1px solid red;
+  flex: 2 1 auto;
+  align-items: flex-start;
+  margin-top: 0;
+  @include media-breakpoint-up(md) {
+    margin-top: calc($spacer * 3);
+  }
+}

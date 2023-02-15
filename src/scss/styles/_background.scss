@@ -1,7 +1,3 @@
-
-
-
-
 .has-orange-background-color {
   @extend .bg-orange;
 }
@@ -14,12 +10,12 @@
   @extend .bg-gray2;
 }
 
-.has-summitt-background-color {
-  @extend .bg-summitt;
-}
-.has-utlink-background-color {
-  @extend .bg-utlink;
-}
+//.has-summitt-background-color {
+//  @extend .bg-summitt;
+//}
+//.has-utlink-background-color {
+//  @extend .bg-utlink;
+//}
 .has-smokey-background-color {
   @extend .bg-smokey;
 }
@@ -29,27 +25,9 @@
 .has-light-background-color {
   @extend .bg-light;
 }
-.has-torch-background-color {
-  @extend .bg-torch;
-}
-.has-sunsphere-background-color {
-  @extend .bg-sunsphere;
-}
-.has-light-background-color {
+.has-gray-2-background-color {
   @extend .bg-light;
 }
-.has-fountain-background-color {
-  @extend .bg-fountain;
-}
-.has-globe-background-color {
-  @extend .bg-globe;
-}
-.has-valley-background-color {
-  @extend .bg-valley;
-}
-.has-switchgrass-background-color {
-  @extend .bg-switchgrass;
-}
-.has-leconte-background-color {
-  @extend .bg-leconte;
+.has-background {
+  padding: $spacer * 2;
 }

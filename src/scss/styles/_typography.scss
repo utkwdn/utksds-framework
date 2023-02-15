@@ -5,7 +5,8 @@ h1,
 .has-drop-cap:first-letter {
   float: left;
   font-size: 6rem;
-  font-weight: 100;
+  // font-weight: 100;
+  font-weight: $font-weight-light;
   line-height: 0.65;
   margin: 0.1em 0.1em 0.2em 0;
 }
@@ -18,10 +19,9 @@ h1,
 }
 
 .text-condensed {
-  font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", "Helvetica Neue",
-    Helvetica, Arial, sans-serif;
+  font-family: $font-family-sans-serif:
   font-style: normal;
-  font-weight: 400;
+  font-weight: $font-weight-normal;
 }
 .text-letterspaced {
   letter-spacing: 0.1em;
@@ -40,27 +40,34 @@ h1,
 // }
 
 // Default wordpress styles. Getting them in line with Bootstrap
-.has-small-font-size {
-  @extend .fs-6;
-}
-.has-medium-font-size {
-  @extend .fs-3;
-}
-.has-large-font-size {
-  @extend .fs-2;
-}
-.has-huge-font-size {
-  @extend .fs-1;
-}
+/* these are set in theme.json now */
+// .has-small-font-size {
+//   @extend .fs-6;
+// }
+// .has-medium-font-size {
+//   @extend .fs-3;
+// }
+// .has-large-font-size {
+//   @extend .fs-2;
+// }
+// .has-huge-font-size {
+//   @extend .fs-1;
+// }
 
 h1 {
-  margin-top: calc($spacer * 6);
-  margin-bottom: calc($spacer * 2);
-  font-weight:900; // think it needs to be heavier like this here
-
+  margin-top: calc($spacer * 4);
+  margin-bottom: calc($spacer * 3);
+  text-transform: uppercase;
+  // keeps super long words like chancellorship from breaking lines
+  // inline-size: min-content;
+  word-break: normal;
+  // max-width: 90vw;
+  // @media screen and (min-width: 1200px) {
+  //   max-width: 34vw;
+  // }
 }
 h2 {
-  margin-top: calc($spacer * 5);
+  margin-top: calc($spacer * 3.2);
   margin-bottom: calc($spacer * 2.2);
 }
 
@@ -83,17 +90,20 @@ h6 {
   margin-bottom: calc($spacer * 1);
 }
 
-h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
-  margin-top:0;
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+  margin-top: 0;
 }
 .entry-header h1 {
   // playing with font size in grey bar
   margin: 0 0 0 0;
-  font-size: $h2-font-size;
+  font-size: $h1-font-size;
   padding: 0;
 }
 p.lead + p {
-margin-top: calc($spacer * 2);
+  margin-top: calc($spacer * 2);
 }
 
 h2.heading-oa-bar {
@@ -103,4 +113,40 @@ h2.heading-oa-bar {
   width: auto;
   position: relative;
   width: fit-content;
+}
+.lead strong {
+  font-weight: $font-weight-bold;
+}
+
+p.has-medium-font-size {
+  margin-bottom: calc($spacer * 2);
+}
+
+.fontLight {
+  font-weight: $font-weight-light;
+}
+
+
+.titleWidthFix {
+  max-width: none !important;
+}
+
+// adding special case for h1 that appear inside columns. clamp is based off body width
+// must account for the container being a different width so VAL must be adjusted for scaling
+// to take place inside containers. Otherwise words break oddly.
+
+.wp-block-columns h1 {
+  font-size: clamp(
+    (calc($font-size-base * 2.24)),
+    3vw + 1rem,
+    (calc($font-size-base * 3.7224))
+  );
+}
+
+.wp-block-columns h2 {
+  font-size: clamp(
+    (calc($font-size-base * 1.647)),
+    2vw + 1rem,
+    (calc($font-size-base * 2.7368))
+  );
 }
