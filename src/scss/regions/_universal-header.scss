@@ -12,7 +12,7 @@
     align-items: stretch;
     width: 100%;
     flex-direction: row;
-    padding-left: 0;
+    // padding-left: 0;
     justify-content: space-between;
     @include media-breakpoint-up(sm) {
       justify-content: flex-end;
@@ -20,7 +20,7 @@
 
     > .uni-nav-item {
       display: flex;
-      // flex-direction: column;
+      flex-direction: column;
       // font-size: $p-font-size;
       align-items: flex-start;
       align-items: center;
@@ -36,7 +36,7 @@
 
       a.menu-item {
         // controls the height and width of the nav buttons
-        padding: calc($spacer * 0.25);
+        padding: calc($spacer * 0.7) !important;
         min-width: 0;
         width: auto;
         height: 100%; // makes menu-items stay same height even when more than one line
@@ -54,7 +54,7 @@
         &:hover {
           background: #445562;
           cursor: pointer;
-          // color: 'var(--wp--preset--color--smokeyX)';
+          // color: "var(--wp--preset--color--smokeyX)";
           color: white !important;
           // border: 1px solid purple;
         }
@@ -86,7 +86,7 @@
         &:hover {
           background: #445562;
           cursor: pointer;
-          // color: 'var(--wp--preset--color--smokeyX)';
+          // color: "var(--wp--preset--color--smokeyX)";
           // color: $utsmokeytext;
           color: white !important;
 
