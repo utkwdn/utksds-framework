@@ -1,0 +1,11 @@
+# dependencies
+/node_modules
+
+# production
+/build
+/src/gulpfile.js
+
+# misc
+.DS_Store
+*.pem
+

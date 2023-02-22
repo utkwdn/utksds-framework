@@ -19,7 +19,7 @@ h1,
 }
 
 .text-condensed {
-  font-family: $font-family-sans-serif:
+  font-family: $font-family-sans-serif;
   font-style: normal;
   font-weight: $font-weight-normal;
 }
@@ -126,7 +126,6 @@ p.has-medium-font-size {
   font-weight: $font-weight-light;
 }
 
-
 .titleWidthFix {
   max-width: none !important;
 }
@@ -149,4 +148,21 @@ p.has-medium-font-size {
     2vw + 1rem,
     (calc($font-size-base * 2.7368))
   );
+}
+
+/* heading used in Executive sites - small all caps with tracking */
+.quiet-heading {
+  font-size: 80%;
+  // font-size: var(--wp--custom--typography--small);
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: 0.5vw;
+  margin-bottom: 1.7vw;
+}
+
+h3:has(.quiet-heading) {
+  // font-size: $h6-font-size;
+  font-size: var(--wp--custom--typography--tiny);
+  margin-top: calc($spacer * 2.25);
+  font-weight: $font-weight-normal;
 }

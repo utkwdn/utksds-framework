@@ -85,7 +85,7 @@
     .framed {
       &::before {
         position: absolute;
-        content: " ";
+        content: ' ';
         width: 60%;
         height: calc(100% - 2rem);
         // bottom: -$container-padding-x;
@@ -137,7 +137,7 @@
   width: auto;
   &::before {
     position: absolute;
-    content: " ";
+    content: ' ';
     width: 60%;
     height: calc(100% - 2rem);
     bottom: -$container-padding-x;
@@ -166,7 +166,7 @@
   width: auto;
   &::before {
     position: absolute;
-    content: " ";
+    content: ' ';
     width: 60%;
     height: calc(100% - 2rem);
     bottom: -$container-padding-x;
@@ -206,7 +206,7 @@
   position: relative;
   &:after {
     position: absolute;
-    content: "";
+    content: '';
     width: 1rem;
     height: auto;
     border-right: 2px solid $utorange;
@@ -291,3 +291,64 @@ outline-offset: calc(-1 * ($spacer / 2));
  outline-offset: calc(-1 * ($spacer / 2));
 }
 */
+
+/* Clip Corner Styling used in Executive Sites */
+@at-root .clipCorner-tr-container {
+  --notchSize: 5vw;
+  clip-path: polygon(
+    0% 0%,
+    var(--notchSize) 0%,
+    calc(100% - var(--notchSize)) 0%,
+    100% var(--notchSize),
+    100% 100%,
+    100% 100%,
+    0% 100%,
+    0% 0%
+  );
+}
+.clipCorner-tr-container-sm {
+  @extend .clipCorner-tr-container;
+  --notchSize: 2.5vw !important;
+}
+
+.clipCorner-tr img {
+  @extend .clipCorner-tr-container;
+}
+
+.clipCorner-tl-container {
+  --notchSize: 5vw;
+  clip-path: polygon(
+    0 var(--notchSize),
+    var(--notchSize) 0%,
+    calc(100% - var(--notchSize)) 0%,
+    100% 0,
+    100% 100%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.clipCorner-tl img {
+  @extend .clipCorner-tl-container;
+}
+
+.clipCorner-br-container {
+  --notchSize: 5vw;
+  clip-path: polygon(
+    0% 0%,
+    100% 0,
+    100% calc(100% - var(--notchSize)),
+    calc(100% - var(--notchSize)) 100%,
+    var(--notchSize) 100%,
+    0% 100%
+  );
+}
+
+.clipCorner-br-container-sm {
+  @extend .clipCorner-br-container;
+
+  --notchSize: 2.5vw !important;
+}
+.clipCorner-br img {
+  @extend .clipCorner-br-container;
+}
