@@ -33,4 +33,21 @@
 }
 .wp-block-column {
   word-break: normal !important; /* overrides wp default of break-word which was causing weird orphaned letters */
+  /* Looking at container queries as a way to better control font sizes inside columns */
+  // container-type: inline-size;
+  // container-name: column;
 }
+
+// .wp-block-column > * {
+//   width: 100%;
+//   border: 1px solid red;
+// }
+// @container column (min-width:700px) {
+//   .h1 {
+//     font-size: clamp(
+//       (calc($font-size-base * 1.647)),
+//       2ci + 1rem,
+//       (calc($font-size-base * 2.7368)) ;
+//     );
+//   }
+// }
